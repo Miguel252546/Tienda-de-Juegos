@@ -1,0 +1,809 @@
+[
+  {
+    "id": "1",
+    "title": "Cyber Legends 2077",
+    "slug": "cyber-legends-2077",
+    "categories": ["acción", "aventura"],
+    "platforms": ["PC", "PlayStation", "Xbox"],
+    "ageRating": "18+",
+    "price": 59.99,
+    "originalPrice": 69.99,
+    "stock": 150,
+    "ratingAvg": 4.5,
+    "ratingCount": 3240,
+    "images": [
+      "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800",
+      "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800"
+    ],
+    "shortDesc": "Un RPG de acción futurista en un mundo abierto cyberpunk",
+    "longDesc": "Sumérgete en Night City, una metrópolis obsesiva obsesionada con el poder, el glamour y la modificación corporal. Juega como V, un mercenario en busca de un implante único que permite la inmortalidad. Personaliza tu personaje y tu estilo de juego mientras exploras una vasta ciudad abierta.",
+    "specs": {
+      "minRequirements": ["Windows 10", "Intel i5-3570K / AMD FX-8310", "8 GB RAM", "NVIDIA GTX 780 / AMD Radeon RX 470", "70 GB espacio"],
+      "recommendedRequirements": ["Windows 10", "Intel i7-4790 / AMD Ryzen 3 3200G", "12 GB RAM", "NVIDIA GTX 1060 / AMD Radeon RX 580", "70 GB SSD"],
+      "features": ["Mundo abierto", "Multijugador", "Mods", "Ray Tracing"]
+    },
+    "tags": ["cyberpunk", "rpg", "mundo-abierto", "futurista"],
+    "releaseDate": "2023-09-15",
+    "developer": "Cyber Studios",
+    "publisher": "GameCorp",
+    "isNew": true,
+    "isOnSale": true
+  },
+  {
+    "id": "2",
+    "title": "Elden Ring: Shadows",
+    "slug": "elden-ring-shadows",
+    "categories": ["acción", "aventura"],
+    "platforms": ["PC", "PlayStation", "Xbox"],
+    "ageRating": "16+",
+    "price": 49.99,
+    "stock": 200,
+    "ratingAvg": 4.8,
+    "ratingCount": 8920,
+    "images": [
+      "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800",
+      "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800"
+    ],
+    "shortDesc": "Expansión épica del aclamado RPG de acción",
+    "longDesc": "Explora nuevas tierras, enfrenta nuevos enemigos y descubre secretos ocultos en esta expansión masiva. Con nuevas armas, hechizos y jefes desafiantes, esta es la experiencia definitiva de Elden Ring.",
+    "specs": {
+      "minRequirements": ["Windows 10", "Intel i5-8400 / AMD Ryzen 3 3300X", "12 GB RAM", "NVIDIA GTX 1060 / AMD RX 580", "60 GB espacio"],
+      "recommendedRequirements": ["Windows 11", "Intel i7-8700K / AMD Ryzen 5 3600X", "16 GB RAM", "NVIDIA RTX 3070 / AMD RX 6700 XT", "60 GB SSD"],
+      "features": ["Mundo abierto", "Multijugador", "Mods"]
+    },
+    "tags": ["souls-like", "rpg", "fantasía", "difícil"],
+    "releaseDate": "2024-06-21",
+    "developer": "FromSoftware",
+    "publisher": "Bandai Namco",
+    "isNew": true
+  },
+  {
+    "id": "3",
+    "title": "Horizon: Forbidden West",
+    "slug": "horizon-forbidden-west",
+    "categories": ["acción", "aventura"],
+    "platforms": ["PlayStation", "PC"],
+    "ageRating": "16+",
+    "price": 54.99,
+    "stock": 180,
+    "ratingAvg": 4.7,
+    "ratingCount": 5670,
+    "images": [
+      "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=800"
+    ],
+    "shortDesc": "Aventura épica en un mundo post-apocalíptico",
+    "longDesc": "Únete a Aloy mientras explora el Oeste Prohibido, una frontera majestuosa pero peligrosa que oculta nuevas amenazas misteriosas. Explora tierras distantes, lucha contra máquinas más grandes e imponentes, y encuentra tribus extrañas en nuevas tierras.",
+    "specs": {
+      "minRequirements": ["Windows 10", "Intel i5-6600K / AMD Ryzen 5 1600", "16 GB RAM", "NVIDIA GTX 1060 / AMD RX 580", "100 GB espacio"],
+      "recommendedRequirements": ["Windows 11", "Intel i7-8700 / AMD Ryzen 5 3600", "16 GB RAM", "NVIDIA RTX 3060 / AMD RX 6600", "100 GB SSD"],
+      "features": ["Mundo abierto", "Mods", "Ray Tracing"]
+    },
+    "tags": ["post-apocalíptico", "mundo-abierto", "aventura"],
+    "releaseDate": "2022-02-18",
+    "developer": "Guerrilla Games",
+    "publisher": "Sony Interactive",
+    "isOnSale": true
+  },
+  {
+    "id": "4",
+    "title": "Resident Evil 4 Remake",
+    "slug": "resident-evil-4-remake",
+    "categories": ["terror", "acción"],
+    "platforms": ["PC", "PlayStation", "Xbox"],
+    "ageRating": "18+",
+    "price": 59.99,
+    "stock": 120,
+    "ratingAvg": 4.6,
+    "ratingCount": 4320,
+    "images": [
+      "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800"
+    ],
+    "shortDesc": "Remake del clásico de terror y supervivencia",
+    "longDesc": "Revive la experiencia clásica con gráficos de nueva generación, controles modernizados y contenido adicional. Leon S. Kennedy debe rescatar a la hija del presidente de un culto siniestro en un pueblo rural europeo.",
+    "specs": {
+      "minRequirements": ["Windows 10", "Intel i5-7500 / AMD Ryzen 3 1200", "8 GB RAM", "NVIDIA GTX 1050 Ti / AMD RX 560", "67 GB espacio"],
+      "recommendedRequirements": ["Windows 11", "Intel i7-8700 / AMD Ryzen 5 3600", "16 GB RAM", "NVIDIA RTX 2060 / AMD RX 5700", "67 GB SSD"],
+      "features": ["Terror", "Supervivencia", "Mods"]
+    },
+    "tags": ["terror", "supervivencia", "remake", "zombies"],
+    "releaseDate": "2023-03-24",
+    "developer": "Capcom",
+    "publisher": "Capcom",
+    "isOnSale": true
+  },
+  {
+    "id": "5",
+    "title": "FIFA 24",
+    "slug": "fifa-24",
+    "categories": ["deportes"],
+    "platforms": ["PC", "PlayStation", "Xbox", "Nintendo Switch"],
+    "ageRating": "3+",
+    "price": 69.99,
+    "stock": 300,
+    "ratingAvg": 4.2,
+    "ratingCount": 12340,
+    "images": [
+      "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800"
+    ],
+    "shortDesc": "El simulador de fútbol más realista",
+    "longDesc": "Experimenta la autenticidad del fútbol con HyperMotionV, tecnología de captura de movimiento avanzada, y más de 19,000 jugadores en más de 700 equipos. Modo Carrera, Ultimate Team y Volta Football.",
+    "specs": {
+      "minRequirements": ["Windows 10", "Intel i5-6600K / AMD Ryzen 5 1600", "8 GB RAM", "NVIDIA GTX 1050 Ti / AMD RX 570", "100 GB espacio"],
+      "recommendedRequirements": ["Windows 11", "Intel i7-6700 / AMD Ryzen 7 2700X", "12 GB RAM", "NVIDIA GTX 1660 / AMD RX 5600 XT", "100 GB SSD"],
+      "features": ["Multijugador online", "Modo carrera", "Ultimate Team"]
+    },
+    "tags": ["fútbol", "deportes", "multijugador", "simulación"],
+    "releaseDate": "2023-09-29",
+    "developer": "EA Sports",
+    "publisher": "Electronic Arts",
+    "isNew": true
+  },
+  {
+    "id": "6",
+    "title": "The Sims 5",
+    "slug": "the-sims-5",
+    "categories": ["simulación"],
+    "platforms": ["PC", "PlayStation", "Xbox"],
+    "ageRating": "12+",
+    "price": 49.99,
+    "originalPrice": 59.99,
+    "stock": 250,
+    "ratingAvg": 4.3,
+    "ratingCount": 7890,
+    "images": [
+      "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800"
+    ],
+    "shortDesc": "Crea y controla la vida de tus Sims",
+    "longDesc": "Construye hogares únicos, diseña Sims con personalidades distintas y vive sus vidas. Con nuevas características de construcción, más opciones de personalización y un mundo abierto más grande.",
+    "specs": {
+      "minRequirements": ["Windows 10", "Intel Core i5 / AMD Athlon X4", "8 GB RAM", "NVIDIA GTX 650 / AMD Radeon HD 7750", "50 GB espacio"],
+      "recommendedRequirements": ["Windows 11", "Intel Core i7 / AMD Ryzen 5", "16 GB RAM", "NVIDIA GTX 1060 / AMD RX 580", "50 GB SSD"],
+      "features": ["Simulación de vida", "Construcción", "Mods"]
+    },
+    "tags": ["simulación", "vida", "construcción", "casual"],
+    "releaseDate": "2024-03-15",
+    "developer": "Maxis",
+    "publisher": "Electronic Arts",
+    "isNew": true,
+    "isOnSale": true
+  },
+  {
+    "id": "7",
+    "title": "Stardew Valley: Expanded",
+    "slug": "stardew-valley-expanded",
+    "categories": ["simulación", "indie"],
+    "platforms": ["PC", "PlayStation", "Xbox", "Nintendo Switch", "Mobile"],
+    "ageRating": "3+",
+    "price": 14.99,
+    "stock": 500,
+    "ratingAvg": 4.9,
+    "ratingCount": 45670,
+    "images": [
+      "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=800"
+    ],
+    "shortDesc": "Granja, construye y explora en este RPG indie",
+    "longDesc": "Hereda la vieja granja de tu abuelo en Stardew Valley. Con herramientas heredadas y algunas monedas, comienzas tu nueva vida. ¿Puedes aprender a vivir de la tierra y convertir estos campos cubiertos de maleza en un hogar próspero?",
+    "specs": {
+      "minRequirements": ["Windows Vista", "2 GHz", "2 GB RAM", "256 MB VRAM", "500 MB espacio"],
+      "recommendedRequirements": ["Windows 10", "2 GHz", "4 GB RAM", "512 MB VRAM", "500 MB SSD"],
+      "features": ["Multijugador", "Mods", "Construcción"]
+    },
+    "tags": ["indie", "granja", "rpg", "relajante"],
+    "releaseDate": "2016-02-26",
+    "developer": "ConcernedApe",
+    "publisher": "ConcernedApe",
+    "isOnSale": true
+  },
+  {
+    "id": "8",
+    "title": "Counter-Strike 2",
+    "slug": "counter-strike-2",
+    "categories": ["acción"],
+    "platforms": ["PC"],
+    "ageRating": "16+",
+    "price": 0,
+    "stock": 9999,
+    "ratingAvg": 4.7,
+    "ratingCount": 234560,
+    "images": [
+      "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800"
+    ],
+    "shortDesc": "Shooter táctico competitivo gratuito",
+    "longDesc": "El shooter táctico competitivo definitivo. Juega el juego de acción multijugador más popular del mundo. CS2 es la evolución más grande en la historia de Counter-Strike, con el motor Source 2.",
+    "specs": {
+      "minRequirements": ["Windows 10", "4 cores CPU", "8 GB RAM", "DirectX 11 compatible", "85 GB espacio"],
+      "recommendedRequirements": ["Windows 11", "4+ cores CPU", "16 GB RAM", "NVIDIA GTX 1060 / AMD RX 580", "85 GB SSD"],
+      "features": ["Multijugador competitivo", "Gratis", "Ranking"]
+    },
+    "tags": ["fps", "competitivo", "multijugador", "gratis"],
+    "releaseDate": "2023-09-27",
+    "developer": "Valve",
+    "publisher": "Valve",
+    "isNew": true
+  },
+  {
+    "id": "9",
+    "title": "Baldur's Gate 3",
+    "slug": "baldurs-gate-3",
+    "categories": ["rpg", "aventura", "estrategia"],
+    "platforms": ["PC", "PlayStation", "Xbox"],
+    "ageRating": "18+",
+    "price": 59.99,
+    "stock": 140,
+    "ratingAvg": 4.9,
+    "ratingCount": 67890,
+    "images": [
+      "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800"
+    ],
+    "shortDesc": "RPG épico basado en D&D",
+    "longDesc": "Reúne tu grupo y regresa a los Reinos Olvidados en una historia de compañerismo y traición, sacrificio y supervivencia, y la atracción del poder absoluto. Tu historia se desarrolla en un mundo de fantasía rico en historias donde cada decisión importa.",
+    "specs": {
+      "minRequirements": ["Windows 10", "Intel i5-4690 / AMD FX-4350", "8 GB RAM", "NVIDIA GTX 970 / AMD RX 480", "150 GB espacio"],
+      "recommendedRequirements": ["Windows 11", "Intel i7-8700K / AMD Ryzen 5 3600", "16 GB RAM", "NVIDIA RTX 2060 / AMD RX 5700 XT", "150 GB SSD"],
+      "features": ["RPG", "Multijugador", "Mods", "Turnos"]
+    },
+    "tags": ["rpg", "fantasía", "d&d", "turnos"],
+    "releaseDate": "2023-08-03",
+    "developer": "Larian Studios",
+    "publisher": "Larian Studios"
+  },
+  {
+    "id": "10",
+    "title": "Call of Duty: Modern Warfare III",
+    "slug": "call-of-duty-modern-warfare-3",
+    "categories": ["acción"],
+    "platforms": ["PC", "PlayStation", "Xbox"],
+    "ageRating": "18+",
+    "price": 69.99,
+    "stock": 220,
+    "ratingAvg": 4.4,
+    "ratingCount": 34560,
+    "images": [
+      "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=800"
+    ],
+    "shortDesc": "Shooter de acción militar",
+    "longDesc": "El regreso del icónico Capitán Price y Task Force 141 en una campaña épica. Multijugador con 16 mapas clásicos remasterizados y el nuevo modo Zombies.",
+    "specs": {
+      "minRequirements": ["Windows 10", "Intel i5-6600 / AMD Ryzen 5 1600", "8 GB RAM", "NVIDIA GTX 960 / AMD RX 470", "149 GB espacio"],
+      "recommendedRequirements": ["Windows 11", "Intel i7-8700K / AMD Ryzen 7 2700X", "16 GB RAM", "NVIDIA RTX 3060 / AMD RX 6600 XT", "149 GB SSD"],
+      "features": ["Multijugador", "Zombies", "Battle Royale"]
+    },
+    "tags": ["fps", "militar", "multijugador", "battle-royale"],
+    "releaseDate": "2023-11-10",
+    "developer": "Sledgehammer Games",
+    "publisher": "Activision",
+    "isNew": true
+  },
+  {
+    "id": "11",
+    "title": "Minecraft",
+    "slug": "minecraft",
+    "categories": ["aventura", "simulación", "indie"],
+    "platforms": ["PC", "PlayStation", "Xbox", "Nintendo Switch", "Mobile"],
+    "ageRating": "7+",
+    "price": 26.95,
+    "stock": 1000,
+    "ratingAvg": 4.8,
+    "ratingCount": 123456,
+    "images": [
+      "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800"
+    ],
+    "shortDesc": "Construye, explora y sobrevive",
+    "longDesc": "Minecraft es un juego de construcción de bloques donde puedes explorar mundos infinitos y construir desde casas simples hasta castillos grandiosos. Juega en modo creativo con recursos ilimitados o mina en modo supervivencia.",
+    "specs": {
+      "minRequirements": ["Windows 7", "Intel Core i3-3210 / AMD A8-7600 APU", "4 GB RAM", "Intel HD Graphics 4000 / AMD Radeon R5", "4 GB espacio"],
+      "recommendedRequirements": ["Windows 11", "Intel Core i5-4690 / AMD A10-7800", "8 GB RAM", "NVIDIA GeForce 700 Series / AMD Radeon Rx 200 Series", "4 GB SSD"],
+      "features": ["Multijugador", "Mods", "Construcción", "Supervivencia"]
+    },
+    "tags": ["construcción", "sandbox", "multijugador", "creativo"],
+    "releaseDate": "2011-11-18",
+    "developer": "Mojang Studios",
+    "publisher": "Microsoft"
+  },
+  {
+    "id": "12",
+    "title": "Grand Theft Auto V",
+    "slug": "grand-theft-auto-v",
+    "categories": ["acción", "aventura"],
+    "platforms": ["PC", "PlayStation", "Xbox"],
+    "ageRating": "18+",
+    "price": 29.99,
+    "originalPrice": 59.99,
+    "stock": 180,
+    "ratingAvg": 4.6,
+    "ratingCount": 234567,
+    "images": [
+      "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800"
+    ],
+    "shortDesc": "Crimen y acción en Los Santos",
+    "longDesc": "Grand Theft Auto V ofrece a los jugadores la libertad de explorar el mundo abierto de San Andreas y Los Santos con la mejor definición y resolución hasta la fecha. Incluye GTA Online.",
+    "specs": {
+      "minRequirements": ["Windows 8.1", "Intel Core 2 Q6600 / AMD Phenom 9850", "4 GB RAM", "NVIDIA 9800 GT / AMD HD 4870", "72 GB espacio"],
+      "recommendedRequirements": ["Windows 10", "Intel Core i5 3470 / AMD X8 FX-8350", "8 GB RAM", "NVIDIA GTX 660 / AMD HD 7870", "72 GB SSD"],
+      "features": ["Mundo abierto", "Multijugador", "Mods"]
+    },
+    "tags": ["mundo-abierto", "crimen", "multijugador", "acción"],
+    "releaseDate": "2013-09-17",
+    "developer": "Rockstar North",
+    "publisher": "Rockstar Games",
+    "isOnSale": true
+  },
+  {
+    "id": "13",
+    "title": "The Witcher 3: Wild Hunt",
+    "slug": "the-witcher-3-wild-hunt",
+    "categories": ["rpg", "aventura"],
+    "platforms": ["PC", "PlayStation", "Xbox", "Nintendo Switch"],
+    "ageRating": "18+",
+    "price": 39.99,
+    "stock": 160,
+    "ratingAvg": 4.9,
+    "ratingCount": 345678,
+    "images": [
+      "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800"
+    ],
+    "shortDesc": "RPG épico de fantasía oscura",
+    "longDesc": "Juega como Geralt de Rivia, un cazador de monstruos en un mundo de fantasía oscura. Explora un vasto mundo abierto, completa misiones épicas y toma decisiones que afectan el destino de reinos enteros.",
+    "specs": {
+      "minRequirements": ["Windows 7", "Intel CPU Core i5-2500K / AMD CPU Phenom II X4 940", "6 GB RAM", "NVIDIA GPU GeForce GTX 660 / AMD GPU Radeon HD 7870", "35 GB espacio"],
+      "recommendedRequirements": ["Windows 10", "Intel CPU Core i7 3770 / AMD CPU AMD FX-8350", "8 GB RAM", "NVIDIA GPU GeForce GTX 770 / AMD GPU Radeon R9 290", "35 GB SSD"],
+      "features": ["Mundo abierto", "RPG", "Mods"]
+    },
+    "tags": ["rpg", "fantasía", "mundo-abierto", "historia"],
+    "releaseDate": "2015-05-19",
+    "developer": "CD Projekt Red",
+    "publisher": "CD Projekt",
+    "isOnSale": true
+  },
+  {
+    "id": "14",
+    "title": "Red Dead Redemption 2",
+    "slug": "red-dead-redemption-2",
+    "categories": ["acción", "aventura"],
+    "platforms": ["PC", "PlayStation", "Xbox"],
+    "ageRating": "18+",
+    "price": 49.99,
+    "stock": 130,
+    "ratingAvg": 4.8,
+    "ratingCount": 234567,
+    "images": [
+      "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=800"
+    ],
+    "shortDesc": "Aventura del salvaje oeste",
+    "longDesc": "América, 1899. El fin de la era de los forajidos ha comenzado. Después de un robo fallido en el pueblo de Blackwater, Arthur Morgan y la banda de Van der Linde se ven obligados a huir.",
+    "specs": {
+      "minRequirements": ["Windows 7", "Intel Core i5-2500K / AMD FX-6300", "8 GB RAM", "NVIDIA GeForce GTX 770 / AMD Radeon R9 280", "150 GB espacio"],
+      "recommendedRequirements": ["Windows 10", "Intel Core i7-4770K / AMD Ryzen 5 1500X", "12 GB RAM", "NVIDIA GeForce GTX 1060 / AMD Radeon RX 480", "150 GB SSD"],
+      "features": ["Mundo abierto", "Multijugador", "Historia épica"]
+    },
+    "tags": ["mundo-abierto", "oeste", "aventura", "historia"],
+    "releaseDate": "2018-10-26",
+    "developer": "Rockstar Studios",
+    "publisher": "Rockstar Games"
+  },
+  {
+    "id": "15",
+    "title": "God of War Ragnarök",
+    "slug": "god-of-war-ragnarok",
+    "categories": ["acción", "aventura"],
+    "platforms": ["PlayStation", "PC"],
+    "ageRating": "18+",
+    "price": 59.99,
+    "stock": 110,
+    "ratingAvg": 4.9,
+    "ratingCount": 123456,
+    "images": [
+      "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800"
+    ],
+    "shortDesc": "Epic Norse mythology adventure",
+    "longDesc": "Kratos y Atreus deben viajar a cada uno de los Nueve Reinos en busca de respuestas mientras las fuerzas asgardianas se preparan para una guerra profetizada que acabará con el mundo.",
+    "specs": {
+      "minRequirements": ["Windows 10", "Intel i5-2500k / AMD Ryzen 3 1200", "8 GB RAM", "NVIDIA GTX 960 / AMD RX 570", "70 GB espacio"],
+      "recommendedRequirements": ["Windows 11", "Intel i5-6600k / AMD Ryzen 5 2400 G", "8 GB RAM", "NVIDIA GTX 1060 / AMD RX 570", "70 GB SSD"],
+      "features": ["Historia épica", "Combate", "Exploración"]
+    },
+    "tags": ["mitología", "nórdico", "acción", "historia"],
+    "releaseDate": "2022-11-09",
+    "developer": "Santa Monica Studio",
+    "publisher": "Sony Interactive"
+  },
+  {
+    "id": "16",
+    "title": "Assassin's Creed Valhalla",
+    "slug": "assassins-creed-valhalla",
+    "categories": ["acción", "aventura"],
+    "platforms": ["PC", "PlayStation", "Xbox"],
+    "ageRating": "18+",
+    "price": 39.99,
+    "originalPrice": 59.99,
+    "stock": 170,
+    "ratingAvg": 4.5,
+    "ratingCount": 98765,
+    "images": [
+      "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800"
+    ],
+    "shortDesc": "Vikingos y asesinos en la Inglaterra medieval",
+    "longDesc": "Conviértete en Eivor, un guerrero vikingo legendario en busca de gloria. Explora un mundo abierto dinámico y hermoso que se extiende desde las costas de Noruega hasta los reinos de Inglaterra.",
+    "specs": {
+      "minRequirements": ["Windows 10", "AMD Ryzen 3 1200 / Intel i5-4460", "8 GB RAM", "AMD R9 380 / NVIDIA GTX 960", "50 GB espacio"],
+      "recommendedRequirements": ["Windows 10", "AMD Ryzen 5 1600 / Intel i7-4790", "8 GB RAM", "AMD RX 570 / NVIDIA GTX 1060", "50 GB SSD"],
+      "features": ["Mundo abierto", "Historia", "Sigilo"]
+    },
+    "tags": ["vikingos", "mundo-abierto", "historia", "sigilo"],
+    "releaseDate": "2020-11-10",
+    "developer": "Ubisoft Montreal",
+    "publisher": "Ubisoft",
+    "isOnSale": true
+  },
+  {
+    "id": "17",
+    "title": "Rocket League",
+    "slug": "rocket-league",
+    "categories": ["deportes", "indie"],
+    "platforms": ["PC", "PlayStation", "Xbox", "Nintendo Switch"],
+    "ageRating": "3+",
+    "price": 0,
+    "stock": 9999,
+    "ratingAvg": 4.6,
+    "ratingCount": 456789,
+    "images": [
+      "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800"
+    ],
+    "shortDesc": "Fútbol con coches",
+    "longDesc": "Rocket League es un juego de deportes de acción híbrido que combina fútbol con carreras, equipado con controles fáciles de aprender y física fluida y satisfactoria.",
+    "specs": {
+      "minRequirements": ["Windows 7", "Intel Core i3-5154T / AMD FX-4350", "4 GB RAM", "NVIDIA GeForce GTX 460 / AMD Radeon HD 5850", "20 GB espacio"],
+      "recommendedRequirements": ["Windows 10", "Intel Core i5-2300 / AMD FX-6300", "8 GB RAM", "NVIDIA GeForce GTX 660 / AMD Radeon HD 7950", "20 GB SSD"],
+      "features": ["Multijugador", "Gratis", "Competitivo"]
+    },
+    "tags": ["deportes", "multijugador", "gratis", "coches"],
+    "releaseDate": "2015-07-07",
+    "developer": "Psyonix",
+    "publisher": "Epic Games"
+  },
+  {
+    "id": "18",
+    "title": "Among Us",
+    "slug": "among-us",
+    "categories": ["estrategia", "indie"],
+    "platforms": ["PC", "PlayStation", "Xbox", "Nintendo Switch", "Mobile"],
+    "ageRating": "10+",
+    "price": 4.99,
+    "stock": 800,
+    "ratingAvg": 4.3,
+    "ratingCount": 234567,
+    "images": [
+      "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=800"
+    ],
+    "shortDesc": "Multijugador de deducción social",
+    "longDesc": "Juega con 4-15 jugadores online o local. Prepárate para el despegue, pero ten cuidado: uno o más jugadores aleatorios entre la tripulación son impostores listos para matar.",
+    "specs": {
+      "minRequirements": ["Windows 7", "SSE2 instruction set support", "1 GB RAM", "DirectX 10", "250 MB espacio"],
+      "recommendedRequirements": ["Windows 10", "SSE2 instruction set support", "2 GB RAM", "DirectX 10", "250 MB SSD"],
+      "features": ["Multijugador", "Social", "Deducción"]
+    },
+    "tags": ["multijugador", "social", "deducción", "indie"],
+    "releaseDate": "2018-06-15",
+    "developer": "InnerSloth",
+    "publisher": "InnerSloth"
+  },
+  {
+    "id": "19",
+    "title": "Valorant",
+    "slug": "valorant",
+    "categories": ["acción"],
+    "platforms": ["PC"],
+    "ageRating": "16+",
+    "price": 0,
+    "stock": 9999,
+    "ratingAvg": 4.7,
+    "ratingCount": 345678,
+    "images": [
+      "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800"
+    ],
+    "shortDesc": "Shooter táctico 5v5",
+    "longDesc": "Valorant es un shooter táctico 5v5 basado en personajes donde los jugadores compiten como atacantes o defensores en rondas de objetivos.",
+    "specs": {
+      "minRequirements": ["Windows 7", "Intel Core 2 Duo E8400 / AMD Athlon 200GE", "4 GB RAM", "Intel HD 4000 / Radeon R5 200", "8 GB espacio"],
+      "recommendedRequirements": ["Windows 10", "Intel Core i3-4150 / AMD FX-6300", "4 GB RAM", "GeForce GT 730 / Radeon R7 240", "8 GB SSD"],
+      "features": ["Multijugador competitivo", "Gratis", "Táctico"]
+    },
+    "tags": ["fps", "competitivo", "táctico", "gratis"],
+    "releaseDate": "2020-06-02",
+    "developer": "Riot Games",
+    "publisher": "Riot Games"
+  },
+  {
+    "id": "20",
+    "title": "Hollow Knight",
+    "slug": "hollow-knight",
+    "categories": ["aventura", "indie"],
+    "platforms": ["PC", "PlayStation", "Xbox", "Nintendo Switch"],
+    "ageRating": "7+",
+    "price": 14.99,
+    "stock": 400,
+    "ratingAvg": 4.9,
+    "ratingCount": 123456,
+    "images": [
+      "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800"
+    ],
+    "shortDesc": "Metroidvania indie con arte hermoso",
+    "longDesc": "Forja tu propio camino en Hollow Knight! Una aventura épica a través de un vasto reino de insectos y héroes que se encuentra en ruinas. Explora cavernas retorcidas, lucha contra criaturas contaminadas y entabla amistad con extraños insectos.",
+    "specs": {
+      "minRequirements": ["Windows 7", "Intel Core 2 Duo E5200", "4 GB RAM", "GeForce 9800GTX+ / AMD HD 2600", "9 GB espacio"],
+      "recommendedRequirements": ["Windows 10", "Intel Core i5", "8 GB RAM", "GeForce GTX 560 / AMD HD 6850", "9 GB SSD"],
+      "features": ["Metroidvania", "Indie", "Arte 2D"]
+    },
+    "tags": ["metroidvania", "indie", "2d", "aventura"],
+    "releaseDate": "2017-02-24",
+    "developer": "Team Cherry",
+    "publisher": "Team Cherry"
+  },
+  {
+    "id": "21",
+    "title": "Dead Space Remake",
+    "slug": "dead-space-remake",
+    "categories": ["terror", "acción"],
+    "platforms": ["PC", "PlayStation", "Xbox"],
+    "ageRating": "18+",
+    "price": 59.99,
+    "stock": 100,
+    "ratingAvg": 4.7,
+    "ratingCount": 45678,
+    "images": [
+      "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800"
+    ],
+    "shortDesc": "Terror espacial remasterizado",
+    "longDesc": "Isaac Clarke es un ingeniero común con una misión. Reparar la USG Ishimura, una nave minera gigante, y rescatar a su tripulación. Pero todo sale mal.",
+    "specs": {
+      "minRequirements": ["Windows 10", "Ryzen 5 2600x / Core i5 8600", "16 GB RAM", "RX 5700 XT / GTX 1070", "50 GB espacio"],
+      "recommendedRequirements": ["Windows 11", "Ryzen 5 5600X / Core i5 11600K", "16 GB RAM", "RX 6700 XT / RTX 2070", "50 GB SSD"],
+      "features": ["Terror", "Supervivencia", "Remake"]
+    },
+    "tags": ["terror", "espacial", "supervivencia", "remake"],
+    "releaseDate": "2023-01-27",
+    "developer": "Motive Studio",
+    "publisher": "Electronic Arts",
+    "isNew": true
+  },
+  {
+    "id": "22",
+    "title": "Cities: Skylines II",
+    "slug": "cities-skylines-2",
+    "categories": ["simulación", "estrategia"],
+    "platforms": ["PC", "PlayStation", "Xbox"],
+    "ageRating": "3+",
+    "price": 49.99,
+    "stock": 190,
+    "ratingAvg": 4.4,
+    "ratingCount": 34567,
+    "images": [
+      "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=800"
+    ],
+    "shortDesc": "Constructor de ciudades moderno",
+    "longDesc": "Construye la ciudad de tus sueños sin restricciones. Con herramientas de construcción mejoradas y un motor de simulación más profundo, crea ciudades más grandes y detalladas que nunca.",
+    "specs": {
+      "minRequirements": ["Windows 10", "Intel® Core™ i7-6700K / AMD® Ryzen™ 5 2600X", "8 GB RAM", "NVIDIA® GeForce™ GTX 970 / AMD® Radeon™ RX 480", "60 GB espacio"],
+      "recommendedRequirements": ["Windows 11", "Intel® Core™ i5-12600K / AMD® Ryzen™ 7 5800X", "16 GB RAM", "NVIDIA® GeForce™ RTX 3080 / AMD® Radeon™ RX 6800 XT", "60 GB SSD"],
+      "features": ["Construcción", "Simulación", "Mods"]
+    },
+    "tags": ["ciudad", "construcción", "simulación", "estrategia"],
+    "releaseDate": "2023-10-24",
+    "developer": "Colossal Order",
+    "publisher": "Paradox Interactive",
+    "isNew": true
+  },
+  {
+    "id": "23",
+    "title": "Diablo IV",
+    "slug": "diablo-4",
+    "categories": ["acción", "rpg"],
+    "platforms": ["PC", "PlayStation", "Xbox"],
+    "ageRating": "18+",
+    "price": 69.99,
+    "stock": 150,
+    "ratingAvg": 4.5,
+    "ratingCount": 234567,
+    "images": [
+      "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800"
+    ],
+    "shortDesc": "RPG de acción oscuro",
+    "longDesc": "Regresa a Santuario en Diablo IV. El mundo está siendo corrompido por demonios y solo tú puedes detenerlos. Elige entre cinco clases y explora un mundo abierto oscuro y gótico.",
+    "specs": {
+      "minRequirements": ["Windows 10", "Intel Core i5-2500K / AMD FX-8350", "8 GB RAM", "NVIDIA GTX 660 / AMD R9 280", "90 GB espacio"],
+      "recommendedRequirements": ["Windows 11", "Intel Core i5-4670K / AMD Ryzen 1300X", "16 GB RAM", "NVIDIA GTX 970 / AMD RX 470", "90 GB SSD"],
+      "features": ["Multijugador", "RPG", "Mundo abierto"]
+    },
+    "tags": ["rpg", "oscuro", "multijugador", "acción"],
+    "releaseDate": "2023-06-06",
+    "developer": "Blizzard Entertainment",
+    "publisher": "Blizzard Entertainment",
+    "isNew": true
+  },
+  {
+    "id": "24",
+    "title": "Starfield",
+    "slug": "starfield",
+    "categories": ["rpg", "aventura"],
+    "platforms": ["PC", "Xbox"],
+    "ageRating": "16+",
+    "price": 69.99,
+    "stock": 120,
+    "ratingAvg": 4.3,
+    "ratingCount": 98765,
+    "images": [
+      "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800"
+    ],
+    "shortDesc": "RPG espacial de Bethesda",
+    "longDesc": "Starfield es el primer universo nuevo en 25 años de Bethesda Game Studios. Explora las estrellas y descubre la última gran frontera de la humanidad.",
+    "specs": {
+      "minRequirements": ["Windows 10", "AMD Ryzen 5 2600X / Intel Core i7-6800K", "16 GB RAM", "AMD Radeon RX 5700 / NVIDIA GeForce 1070 Ti", "125 GB espacio"],
+      "recommendedRequirements": ["Windows 11", "AMD Ryzen 5 3600X / Intel i5-10600K", "16 GB RAM", "AMD Radeon RX 6800 XT / NVIDIA RTX 2080", "125 GB SSD"],
+      "features": ["Mundo abierto", "RPG", "Espacial"]
+    },
+    "tags": ["espacial", "rpg", "mundo-abierto", "ciencia-ficción"],
+    "releaseDate": "2023-09-06",
+    "developer": "Bethesda Game Studios",
+    "publisher": "Bethesda Softworks",
+    "isNew": true
+  },
+  {
+    "id": "25",
+    "title": "Spider-Man 2",
+    "slug": "spider-man-2",
+    "categories": ["acción", "aventura"],
+    "platforms": ["PlayStation", "PC"],
+    "ageRating": "16+",
+    "price": 69.99,
+    "stock": 140,
+    "ratingAvg": 4.8,
+    "ratingCount": 123456,
+    "images": [
+      "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800"
+    ],
+    "shortDesc": "Aventura de superhéroes épica",
+    "longDesc": "Juega como Peter Parker y Miles Morales mientras protegen la ciudad de Nueva York de nuevos villanos. Con nuevas habilidades, trajes y una historia emocionante.",
+    "specs": {
+      "minRequirements": ["Windows 10", "Intel Core i3-4160 / AMD equivalent", "8 GB RAM", "NVIDIA GTX 950 / AMD Radeon RX 470", "75 GB espacio"],
+      "recommendedRequirements": ["Windows 11", "Intel Core i5-4670 / AMD Ryzen 5 1600", "16 GB RAM", "NVIDIA GTX 1060 / AMD RX 580", "75 GB SSD"],
+      "features": ["Mundo abierto", "Superhéroes", "Historia"]
+    },
+    "tags": ["superhéroes", "mundo-abierto", "acción", "aventura"],
+    "releaseDate": "2023-10-20",
+    "developer": "Insomniac Games",
+    "publisher": "Sony Interactive",
+    "isNew": true
+  },
+  {
+    "id": "26",
+    "title": "Alan Wake 2",
+    "slug": "alan-wake-2",
+    "categories": ["terror", "aventura"],
+    "platforms": ["PC", "PlayStation", "Xbox"],
+    "ageRating": "18+",
+    "price": 59.99,
+    "stock": 110,
+    "ratingAvg": 4.7,
+    "ratingCount": 67890,
+    "images": [
+      "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800"
+    ],
+    "shortDesc": "Terror psicológico de Remedy",
+    "longDesc": "Alan Wake, un escritor atrapado en una pesadilla más allá de nuestra realidad, escribe una historia para escapar. Pero sus palabras se convierten en oscuridad alrededor de él.",
+    "specs": {
+      "minRequirements": ["Windows 10", "Intel i5-8400 / AMD Ryzen 5 2600", "16 GB RAM", "NVIDIA GeForce RTX 2060 / AMD RX 6600", "90 GB espacio"],
+      "recommendedRequirements": ["Windows 11", "Intel i7-10700K / AMD Ryzen 7 3700X", "16 GB RAM", "NVIDIA GeForce RTX 3070 / AMD RX 6700 XT", "90 GB SSD"],
+      "features": ["Terror", "Historia", "Ray Tracing"]
+    },
+    "tags": ["terror", "psicológico", "historia", "suspense"],
+    "releaseDate": "2023-10-27",
+    "developer": "Remedy Entertainment",
+    "publisher": "Epic Games",
+    "isNew": true
+  },
+  {
+    "id": "27",
+    "title": "Sea of Thieves",
+    "slug": "sea-of-thieves",
+    "categories": ["aventura", "acción"],
+    "platforms": ["PC", "Xbox"],
+    "ageRating": "12+",
+    "price": 39.99,
+    "stock": 200,
+    "ratingAvg": 4.4,
+    "ratingCount": 234567,
+    "images": [
+      "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=800"
+    ],
+    "shortDesc": "Aventura pirata multijugador",
+    "longDesc": "Sea of Thieves ofrece la experiencia pirata esencial, desde navegar y luchar hasta explorar y saquear: todo lo que necesitas para vivir la vida pirata y convertirte en una leyenda.",
+    "specs": {
+      "minRequirements": ["Windows 10", "Intel Q9450 / AMD Phenom II X6", "4 GB RAM", "NVIDIA GeForce GTX 650 / AMD Radeon 7750", "50 GB espacio"],
+      "recommendedRequirements": ["Windows 10", "Intel i5 4690 / AMD FX-8150", "8 GB RAM", "NVIDIA GeForce GTX 770 / AMD Radeon R9 380x", "50 GB SSD"],
+      "features": ["Multijugador", "Mundo abierto", "Piratas"]
+    },
+    "tags": ["piratas", "multijugador", "mundo-abierto", "aventura"],
+    "releaseDate": "2018-03-20",
+    "developer": "Rare",
+    "publisher": "Xbox Game Studios"
+  },
+  {
+    "id": "28",
+    "title": "Hades",
+    "slug": "hades",
+    "categories": ["acción", "indie", "rpg"],
+    "platforms": ["PC", "PlayStation", "Xbox", "Nintendo Switch"],
+    "ageRating": "12+",
+    "price": 24.99,
+    "stock": 350,
+    "ratingAvg": 4.9,
+    "ratingCount": 234567,
+    "images": [
+      "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800"
+    ],
+    "shortDesc": "Roguelike de acción con mitología griega",
+    "longDesc": "Desafía al dios de los muertos mientras luchas para escapar del Inframundo en este roguelike de acción de Supergiant Games.",
+    "specs": {
+      "minRequirements": ["Windows 7", "Dual Core 2.4 GHz", "4 GB RAM", "GeForce GTX 450 / Radeon HD 5750", "15 GB espacio"],
+      "recommendedRequirements": ["Windows 10", "Dual Core 3.0 GHz+", "8 GB RAM", "GeForce GTX 950 / Radeon R7 360", "15 GB SSD"],
+      "features": ["Roguelike", "Indie", "Mitología"]
+    },
+    "tags": ["roguelike", "indie", "mitología", "acción"],
+    "releaseDate": "2020-09-17",
+    "developer": "Supergiant Games",
+    "publisher": "Supergiant Games"
+  },
+  {
+    "id": "29",
+    "title": "Fall Guys",
+    "slug": "fall-guys",
+    "categories": ["deportes", "indie"],
+    "platforms": ["PC", "PlayStation", "Xbox", "Nintendo Switch", "Mobile"],
+    "ageRating": "3+",
+    "price": 0,
+    "stock": 9999,
+    "ratingAvg": 4.2,
+    "ratingCount": 345678,
+    "images": [
+      "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800"
+    ],
+    "shortDesc": "Battle royale de plataformas",
+    "longDesc": "Fall Guys es un battle royale multijugador masivo donde compites en rondas caóticas hasta que un solo vencedor permanece.",
+    "specs": {
+      "minRequirements": ["Windows 10", "Intel Core i5 or AMD equivalent", "8 GB RAM", "NVIDIA GTX 660 or AMD Radeon HD 7950", "2 GB espacio"],
+      "recommendedRequirements": ["Windows 10", "Intel Core i5 or AMD equivalent", "8 GB RAM", "NVIDIA GTX 1060 or AMD RX 580", "2 GB SSD"],
+      "features": ["Multijugador", "Gratis", "Battle Royale"]
+    },
+    "tags": ["battle-royale", "multijugador", "gratis", "casual"],
+    "releaseDate": "2020-08-04",
+    "developer": "Mediatonic",
+    "publisher": "Epic Games"
+  },
+  {
+    "id": "30",
+    "title": "Celeste",
+    "slug": "celeste",
+    "categories": ["aventura", "indie"],
+    "platforms": ["PC", "PlayStation", "Xbox", "Nintendo Switch"],
+    "ageRating": "7+",
+    "price": 19.99,
+    "stock": 300,
+    "ratingAvg": 4.8,
+    "ratingCount": 123456,
+    "images": [
+      "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=800"
+    ],
+    "shortDesc": "Plataformas indie con historia profunda",
+    "longDesc": "Ayuda a Madeline a sobrevivir a sus demonios internos en su viaje a la cima de la Montaña Celeste, en este superpulido plataformero de acción de los creadores de TowerFall.",
+    "specs": {
+      "minRequirements": ["Windows 7", "Intel Core i3 M380", "2 GB RAM", "Intel HD 4000", "1.2 GB espacio"],
+      "recommendedRequirements": ["Windows 10", "Intel Core i3 M380", "4 GB RAM", "Intel HD 4000", "1.2 GB SSD"],
+      "features": ["Plataformas", "Indie", "Historia"]
+    },
+    "tags": ["plataformas", "indie", "historia", "2d"],
+    "releaseDate": "2018-01-25",
+    "developer": "Extremely OK Games",
+    "publisher": "Extremely OK Games"
+  }
+]
+
