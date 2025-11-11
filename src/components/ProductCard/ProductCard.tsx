@@ -57,7 +57,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
     : 0
 
   const imgSrc = product.images && product.images.length
-    ? `${import.meta.env.BASE_URL}${product.images[0].replace(/^\.\/?/, '')}`
+    ? `/${product.images[0]}`
     : 'https://via.placeholder.com/400x300?text=No+Image'
 
   return (
