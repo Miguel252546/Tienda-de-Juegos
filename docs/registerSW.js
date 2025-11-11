@@ -1,1 +1,0 @@
-if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/Tienda-de-Juegos/sw.js', { scope: '/Tienda-de-Juegos/' })})}
