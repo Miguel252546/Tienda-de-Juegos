@@ -2,13 +2,10 @@
   "name": "tienda-de-juegos",
   "private": true,
   "version": "1.0.0",
-  "homepage": "https://Miguel252546.github.io/Tienda-de-Juegos/",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d docs",
     "preview": "vite preview",
     "test": "jest",
     "test:watch": "jest --watch",

@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  base: '/Tienda-de-Juegos/',
+  base: '/',
   plugins: [react()],
   server: {
     port: 5173,
@@ -10,7 +10,7 @@ export default defineConfig({
     open: true
   },
   build: {
-    outDir: 'docs',
+    outDir: 'dist',
     sourcemap: false,
     rollupOptions: {
       output: {
