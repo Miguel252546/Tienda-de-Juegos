@@ -60,17 +60,17 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
     <Link
       to={`/product/${product.slug}`}
       onClick={handleClick}
-      className="group relative bg-gamer-charcoal rounded-lg overflow-hidden border border-gamer-gray hover:border-neon-blue transition-all duration-300 hover:shadow-lg hover:shadow-neon-blue/20"
+      className="group relative bg-white dark:bg-gamer-charcoal rounded-lg overflow-hidden border border-gray-200 dark:border-gamer-gray hover:border-blue-500 dark:hover:border-neon-blue transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20 dark:hover:shadow-neon-blue/20"
     >
       {/* Badges */}
       <div className="absolute top-2 left-2 z-10 flex flex-col space-y-2">
         {product.isNew && (
-          <span className="bg-neon-cyan text-white px-2 py-1 rounded text-xs font-semibold">
+          <span className="bg-cyan-500 dark:bg-neon-cyan text-white px-2 py-1 rounded text-xs font-semibold">
             {t('common.new')}
           </span>
         )}
         {isOnSale && (
-          <span className="bg-neon-pink text-white px-2 py-1 rounded text-xs font-semibold">
+          <span className="bg-pink-500 dark:bg-neon-pink text-white px-2 py-1 rounded text-xs font-semibold">
             -{discount}%
           </span>
         )}
@@ -84,44 +84,48 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       {/* Wishlist Button */}
       <button
         onClick={handleWishlistToggle}
-        className="absolute top-2 right-2 z-10 p-2 bg-gamer-charcoal/80 rounded-full hover:bg-gamer-charcoal transition-colors"
+        className="absolute top-2 right-2 z-10 p-2 bg-white/90 dark:bg-gamer-charcoal/80 rounded-full hover:bg-gray-100 dark:hover:bg-gamer-charcoal transition-colors"
         aria-label={t('common.wishlist')}
       >
         <Heart
           className={`w-5 h-5 transition-colors ${
             isInWishlist(product.id)
-              ? 'fill-neon-pink text-neon-pink'
-              : 'text-gray-400 group-hover:text-neon-pink'
+              ? 'fill-pink-500 text-pink-500 dark:fill-neon-pink dark:text-neon-pink'
+              : 'text-gray-400 group-hover:text-pink-500 dark:group-hover:text-neon-pink'
           }`}
         />
       </button>
 
       {/* Image */}
-      <div className="relative h-48 bg-gamer-gray overflow-hidden">
+      <div className="relative h-48 bg-gray-100 dark:bg-gamer-gray overflow-hidden">
         <img
-          src={product.images[0]}
+          src={product.images[0] || 'https://via.placeholder.com/400x300?text=No+Image'}
           alt={product.title}
           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
           loading="lazy"
+          onError={(e) => {
+            const target = e.target as HTMLImageElement
+            target.src = 'https://via.placeholder.com/400x300?text=Image+Not+Found'
+          }}
         />
-        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors" />
+        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 dark:group-hover:bg-black/20 transition-colors" />
       </div>
 
       {/* Content */}
       <div className="p-4">
-        <h3 className="text-white font-semibold mb-2 line-clamp-2 group-hover:text-neon-blue transition-colors">
+        <h3 className="text-gray-900 dark:text-white font-semibold mb-2 line-clamp-2 group-hover:text-blue-600 dark:group-hover:text-neon-blue transition-colors">
           {product.title}
         </h3>
         
-        <p className="text-gray-400 text-sm mb-3 line-clamp-2">
+        <p className="text-gray-600 dark:text-gray-400 text-sm mb-3 line-clamp-2">
           {product.shortDesc}
         </p>
 
         {/* Rating */}
         <div className="flex items-center space-x-1 mb-3">
           <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-          <span className="text-white text-sm">{product.ratingAvg.toFixed(1)}</span>
-          <span className="text-gray-400 text-xs">({product.ratingCount})</span>
+          <span className="text-gray-900 dark:text-white text-sm">{product.ratingAvg.toFixed(1)}</span>
+          <span className="text-gray-500 dark:text-gray-400 text-xs">({product.ratingCount})</span>
         </div>
 
         {/* Platforms */}
@@ -129,7 +133,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           {product.platforms.slice(0, 3).map((platform) => (
             <span
               key={platform}
-              className="text-xs bg-gamer-gray text-gray-300 px-2 py-1 rounded"
+              className="text-xs bg-gray-100 dark:bg-gamer-gray text-gray-700 dark:text-gray-300 px-2 py-1 rounded"
             >
               {platform}
             </span>
@@ -141,7 +145,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           <div>
             {isOnSale ? (
               <div>
-                <span className="text-neon-pink font-bold text-lg">
+                <span className="text-pink-600 dark:text-neon-pink font-bold text-lg">
                   €{product.price.toFixed(2)}
                 </span>
                 <span className="text-gray-500 line-through text-sm ml-2">
@@ -149,7 +153,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
                 </span>
               </div>
             ) : (
-              <span className="text-neon-blue font-bold text-lg">
+              <span className="text-blue-600 dark:text-neon-blue font-bold text-lg">
                 €{product.price.toFixed(2)}
               </span>
             )}
@@ -157,7 +161,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           <button
             onClick={handleAddToCart}
             disabled={product.stock === 0}
-            className="p-2 bg-neon-blue text-white rounded-lg hover:bg-opacity-80 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+            className="p-2 bg-blue-600 dark:bg-neon-blue text-white rounded-lg hover:bg-blue-700 dark:hover:bg-opacity-80 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
             aria-label={t('common.addToCart')}
           >
             <ShoppingCart className="w-5 h-5" />

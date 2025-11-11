@@ -15,6 +15,10 @@ export default {
         'neon-violet': '#8b5cf6',
         'neon-cyan': '#06b6d4',
         'neon-pink': '#ec4899',
+        // Light mode colors
+        'light-bg': '#f8f9fa',
+        'light-surface': '#ffffff',
+        'light-border': '#e5e7eb',
       },
       fontFamily: {
         'gamer': ['Orbitron', 'Inter', 'Poppins', 'sans-serif'],

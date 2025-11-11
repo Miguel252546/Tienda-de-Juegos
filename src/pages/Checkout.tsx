@@ -65,18 +65,18 @@ const Checkout: React.FC = () => {
         </Helmet>
         <div className="container mx-auto px-4 py-12 text-center">
           <CheckCircle className="w-24 h-24 text-green-500 mx-auto mb-6" />
-          <h1 className="text-3xl font-gamer font-bold text-neon-blue mb-4">
+          <h1 className="text-3xl font-gamer font-bold text-blue-600 dark:text-neon-blue mb-4">
             {t('checkout.orderPlaced')}
           </h1>
-          <p className="text-gray-400 mb-2">
-            {t('checkout.orderNumber')}: <span className="text-neon-blue font-bold">{orderNumber}</span>
+          <p className="text-gray-600 dark:text-gray-400 mb-2">
+            {t('checkout.orderNumber')}: <span className="text-blue-600 dark:text-neon-blue font-bold">{orderNumber}</span>
           </p>
-          <p className="text-gray-400 mb-8">
+          <p className="text-gray-600 dark:text-gray-400 mb-8">
             Recibirás un correo de confirmación en breve.
           </p>
           <button
             onClick={() => navigate('/catalog')}
-            className="bg-neon-blue text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-80 transition-colors"
+            className="bg-blue-600 dark:bg-neon-blue text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 dark:hover:bg-opacity-80 transition-colors"
           >
             {t('common.continueShopping')}
           </button>
@@ -91,7 +91,7 @@ const Checkout: React.FC = () => {
         <title>{t('checkout.title')} - GameStore</title>
       </Helmet>
       <div className="container mx-auto px-4 py-8">
-        <h1 className="text-3xl font-gamer font-bold text-neon-blue mb-8">
+        <h1 className="text-3xl font-gamer font-bold text-blue-600 dark:text-neon-blue mb-8">
           {t('checkout.title')}
         </h1>
 
@@ -99,74 +99,74 @@ const Checkout: React.FC = () => {
           {/* Form */}
           <div className="lg:col-span-2 space-y-8">
             {/* Shipping Info */}
-            <div className="bg-gamer-charcoal rounded-lg p-6 border border-gamer-gray">
-              <h2 className="text-xl font-gamer font-bold text-neon-blue mb-6">
+            <div className="bg-white dark:bg-gamer-charcoal rounded-lg p-6 border border-gray-200 dark:border-gamer-gray transition-colors">
+              <h2 className="text-xl font-gamer font-bold text-blue-600 dark:text-neon-blue mb-6">
                 {t('checkout.shippingInfo')}
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-white font-semibold mb-2">{t('common.name')}</label>
+                  <label className="block text-gray-900 dark:text-white font-semibold mb-2">{t('common.name')}</label>
                   <input
                     type="text"
                     name="name"
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-2 bg-gamer-gray border border-gamer-gray rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-neon-blue"
+                    className="w-full px-4 py-2 bg-gray-100 dark:bg-gamer-gray border border-gray-300 dark:border-gamer-gray rounded-lg text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:border-blue-500 dark:focus:border-neon-blue transition-colors"
                   />
                 </div>
                 <div>
-                  <label className="block text-white font-semibold mb-2">{t('common.email')}</label>
+                  <label className="block text-gray-900 dark:text-white font-semibold mb-2">{t('common.email')}</label>
                   <input
                     type="email"
                     name="email"
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-2 bg-gamer-gray border border-gamer-gray rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-neon-blue"
+                    className="w-full px-4 py-2 bg-gray-100 dark:bg-gamer-gray border border-gray-300 dark:border-gamer-gray rounded-lg text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:border-blue-500 dark:focus:border-neon-blue transition-colors"
                   />
                 </div>
                 <div className="md:col-span-2">
-                  <label className="block text-white font-semibold mb-2">Dirección</label>
+                  <label className="block text-gray-900 dark:text-white font-semibold mb-2">Dirección</label>
                   <input
                     type="text"
                     name="address"
                     value={formData.address}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-2 bg-gamer-gray border border-gamer-gray rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-neon-blue"
+                    className="w-full px-4 py-2 bg-gray-100 dark:bg-gamer-gray border border-gray-300 dark:border-gamer-gray rounded-lg text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:border-blue-500 dark:focus:border-neon-blue transition-colors"
                   />
                 </div>
                 <div>
-                  <label className="block text-white font-semibold mb-2">Ciudad</label>
+                  <label className="block text-gray-900 dark:text-white font-semibold mb-2">Ciudad</label>
                   <input
                     type="text"
                     name="city"
                     value={formData.city}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-2 bg-gamer-gray border border-gamer-gray rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-neon-blue"
+                    className="w-full px-4 py-2 bg-gray-100 dark:bg-gamer-gray border border-gray-300 dark:border-gamer-gray rounded-lg text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:border-blue-500 dark:focus:border-neon-blue transition-colors"
                   />
                 </div>
                 <div>
-                  <label className="block text-white font-semibold mb-2">Código Postal</label>
+                  <label className="block text-gray-900 dark:text-white font-semibold mb-2">Código Postal</label>
                   <input
                     type="text"
                     name="zipCode"
                     value={formData.zipCode}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-2 bg-gamer-gray border border-gamer-gray rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-neon-blue"
+                    className="w-full px-4 py-2 bg-gray-100 dark:bg-gamer-gray border border-gray-300 dark:border-gamer-gray rounded-lg text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:border-blue-500 dark:focus:border-neon-blue transition-colors"
                   />
                 </div>
                 <div>
-                  <label className="block text-white font-semibold mb-2">País</label>
+                  <label className="block text-gray-900 dark:text-white font-semibold mb-2">País</label>
                   <select
                     name="country"
                     value={formData.country}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-2 bg-gamer-gray border border-gamer-gray rounded-lg text-white focus:outline-none focus:border-neon-blue"
+                    className="w-full px-4 py-2 bg-gray-100 dark:bg-gamer-gray border border-gray-300 dark:border-gamer-gray rounded-lg text-gray-900 dark:text-white focus:outline-none focus:border-blue-500 dark:focus:border-neon-blue transition-colors"
                   >
                     <option value="España">España</option>
                     <option value="México">México</option>
@@ -178,14 +178,14 @@ const Checkout: React.FC = () => {
             </div>
 
             {/* Payment Info */}
-            <div className="bg-gamer-charcoal rounded-lg p-6 border border-gamer-gray">
-              <h2 className="text-xl font-gamer font-bold text-neon-blue mb-6 flex items-center">
+            <div className="bg-white dark:bg-gamer-charcoal rounded-lg p-6 border border-gray-200 dark:border-gamer-gray transition-colors">
+              <h2 className="text-xl font-gamer font-bold text-blue-600 dark:text-neon-blue mb-6 flex items-center">
                 <CreditCard className="w-5 h-5 mr-2" />
                 {t('checkout.paymentInfo')}
               </h2>
               <div className="space-y-4">
                 <div>
-                  <label className="block text-white font-semibold mb-2">Número de tarjeta</label>
+                  <label className="block text-gray-900 dark:text-white font-semibold mb-2">Número de tarjeta</label>
                   <input
                     type="text"
                     name="cardNumber"
@@ -194,23 +194,23 @@ const Checkout: React.FC = () => {
                     placeholder="1234 5678 9012 3456"
                     required
                     maxLength={19}
-                    className="w-full px-4 py-2 bg-gamer-gray border border-gamer-gray rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-neon-blue"
+                    className="w-full px-4 py-2 bg-gray-100 dark:bg-gamer-gray border border-gray-300 dark:border-gamer-gray rounded-lg text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:border-blue-500 dark:focus:border-neon-blue transition-colors"
                   />
                 </div>
                 <div>
-                  <label className="block text-white font-semibold mb-2">Nombre en la tarjeta</label>
+                  <label className="block text-gray-900 dark:text-white font-semibold mb-2">Nombre en la tarjeta</label>
                   <input
                     type="text"
                     name="cardName"
                     value={formData.cardName}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-2 bg-gamer-gray border border-gamer-gray rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-neon-blue"
+                    className="w-full px-4 py-2 bg-gray-100 dark:bg-gamer-gray border border-gray-300 dark:border-gamer-gray rounded-lg text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:border-blue-500 dark:focus:border-neon-blue transition-colors"
                   />
                 </div>
                 <div className="grid grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-white font-semibold mb-2">Fecha de expiración</label>
+                    <label className="block text-gray-900 dark:text-white font-semibold mb-2">Fecha de expiración</label>
                     <input
                       type="text"
                       name="expiryDate"
@@ -219,11 +219,11 @@ const Checkout: React.FC = () => {
                       placeholder="MM/AA"
                       required
                       maxLength={5}
-                      className="w-full px-4 py-2 bg-gamer-gray border border-gamer-gray rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-neon-blue"
+                      className="w-full px-4 py-2 bg-gray-100 dark:bg-gamer-gray border border-gray-300 dark:border-gamer-gray rounded-lg text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:border-blue-500 dark:focus:border-neon-blue transition-colors"
                     />
                   </div>
                   <div>
-                    <label className="block text-white font-semibold mb-2">CVV</label>
+                    <label className="block text-gray-900 dark:text-white font-semibold mb-2">CVV</label>
                     <input
                       type="text"
                       name="cvv"
@@ -232,12 +232,12 @@ const Checkout: React.FC = () => {
                       placeholder="123"
                       required
                       maxLength={3}
-                      className="w-full px-4 py-2 bg-gamer-gray border border-gamer-gray rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-neon-blue"
+                      className="w-full px-4 py-2 bg-gray-100 dark:bg-gamer-gray border border-gray-300 dark:border-gamer-gray rounded-lg text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:border-blue-500 dark:focus:border-neon-blue transition-colors"
                     />
                   </div>
                 </div>
               </div>
-              <div className="mt-4 flex items-center text-gray-400 text-sm">
+              <div className="mt-4 flex items-center text-gray-600 dark:text-gray-400 text-sm">
                 <Lock className="w-4 h-4 mr-2" />
                 <span>Tu información de pago está protegida</span>
               </div>
@@ -246,8 +246,8 @@ const Checkout: React.FC = () => {
 
           {/* Order Summary */}
           <div className="lg:col-span-1">
-            <div className="bg-gamer-charcoal rounded-lg p-6 border border-gamer-gray sticky top-24">
-              <h2 className="text-xl font-gamer font-bold text-neon-blue mb-6">
+            <div className="bg-white dark:bg-gamer-charcoal rounded-lg p-6 border border-gray-200 dark:border-gamer-gray sticky top-24 transition-colors">
+              <h2 className="text-xl font-gamer font-bold text-blue-600 dark:text-neon-blue mb-6">
                 {t('checkout.orderSummary')}
               </h2>
               <div className="space-y-4 mb-6">
@@ -260,30 +260,30 @@ const Checkout: React.FC = () => {
                       loading="lazy"
                     />
                     <div className="flex-1 min-w-0">
-                      <p className="text-white font-semibold truncate">{item.product.title}</p>
-                      <p className="text-gray-400 text-sm">x{item.quantity}</p>
+                      <p className="text-gray-900 dark:text-white font-semibold truncate">{item.product.title}</p>
+                      <p className="text-gray-600 dark:text-gray-400 text-sm">x{item.quantity}</p>
                     </div>
-                    <p className="text-neon-blue font-bold">
+                    <p className="text-blue-600 dark:text-neon-blue font-bold">
                       €{(item.product.price * item.quantity).toFixed(2)}
                     </p>
                   </div>
                 ))}
               </div>
-              <div className="border-t border-gamer-gray pt-4 space-y-2 mb-6">
-                <div className="flex justify-between text-gray-400">
+              <div className="border-t border-gray-200 dark:border-gamer-gray pt-4 space-y-2 mb-6">
+                <div className="flex justify-between text-gray-600 dark:text-gray-400">
                   <span>{t('common.subtotal')}</span>
                   <span>€{subtotal.toFixed(2)}</span>
                 </div>
-                <div className="flex justify-between text-gray-400">
+                <div className="flex justify-between text-gray-600 dark:text-gray-400">
                   <span>{t('common.taxes')}</span>
                   <span>€{taxes.toFixed(2)}</span>
                 </div>
-                <div className="flex justify-between text-gray-400">
+                <div className="flex justify-between text-gray-600 dark:text-gray-400">
                   <span>{t('common.shipping')}</span>
                   <span>{shipping === 0 ? t('common.free') : `€${shipping.toFixed(2)}`}</span>
                 </div>
-                <div className="border-t border-gamer-gray pt-2">
-                  <div className="flex justify-between text-xl font-bold text-neon-blue">
+                <div className="border-t border-gray-200 dark:border-gamer-gray pt-2">
+                  <div className="flex justify-between text-xl font-bold text-blue-600 dark:text-neon-blue">
                     <span>{t('common.total')}</span>
                     <span>€{total.toFixed(2)}</span>
                   </div>
@@ -292,7 +292,7 @@ const Checkout: React.FC = () => {
               <button
                 type="submit"
                 disabled={isProcessing}
-                className="w-full bg-neon-blue text-white py-4 rounded-lg font-semibold hover:bg-opacity-80 disabled:opacity-50 disabled:cursor-not-allowed transition-colors flex items-center justify-center space-x-2"
+                className="w-full bg-blue-600 dark:bg-neon-blue text-white py-4 rounded-lg font-semibold hover:bg-blue-700 dark:hover:bg-opacity-80 disabled:opacity-50 disabled:cursor-not-allowed transition-colors flex items-center justify-center space-x-2"
               >
                 {isProcessing ? (
                   <>

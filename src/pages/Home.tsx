@@ -47,22 +47,22 @@ const Home: React.FC = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent" />
                 <div className="relative h-full container mx-auto px-4 flex items-center">
                   <div className="max-w-2xl">
-                    <h1 className="text-5xl md:text-6xl font-gamer font-bold text-white mb-4 text-glow">
+                    <h1 className="text-5xl md:text-6xl font-gamer font-bold text-white mb-4 dark:text-glow">
                       {product.title}
                     </h1>
-                    <p className="text-xl text-gray-300 mb-6">
+                    <p className="text-xl text-gray-200 mb-6">
                       {product.shortDesc}
                     </p>
                     <div className="flex space-x-4">
                       <Link
                         to={`/product/${product.slug}`}
-                        className="bg-neon-blue text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-80 transition-colors"
+                        className="bg-blue-600 dark:bg-neon-blue text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 dark:hover:bg-opacity-80 transition-colors"
                       >
                         {t('common.viewDetails')}
                       </Link>
                       <Link
                         to="/catalog"
-                        className="bg-transparent border-2 border-neon-blue text-neon-blue px-8 py-3 rounded-lg font-semibold hover:bg-neon-blue hover:text-white transition-colors"
+                        className="bg-transparent border-2 border-blue-600 dark:border-neon-blue text-blue-600 dark:text-neon-blue px-8 py-3 rounded-lg font-semibold hover:bg-blue-600 dark:hover:bg-neon-blue hover:text-white transition-colors"
                       >
                         {t('home.shopNow')}
                       </Link>
@@ -78,12 +78,12 @@ const Home: React.FC = () => {
       {/* New Releases */}
       <section className="py-12 container mx-auto px-4">
         <div className="flex items-center justify-between mb-8">
-          <h2 className="text-3xl font-gamer font-bold text-neon-blue">
+          <h2 className="text-3xl font-gamer font-bold text-blue-600 dark:text-neon-blue">
             {t('home.newReleases')}
           </h2>
           <Link
             to="/catalog?category=nuevos"
-            className="text-neon-blue hover:text-neon-cyan transition-colors"
+            className="text-blue-600 dark:text-neon-blue hover:text-blue-700 dark:hover:text-neon-cyan transition-colors"
           >
             {t('common.viewAll')} →
           </Link>
@@ -96,14 +96,14 @@ const Home: React.FC = () => {
       </section>
 
       {/* On Sale */}
-      <section className="py-12 bg-gamer-charcoal container mx-auto px-4">
+      <section className="py-12 bg-gray-50 dark:bg-gamer-charcoal container mx-auto px-4 transition-colors">
         <div className="flex items-center justify-between mb-8">
-          <h2 className="text-3xl font-gamer font-bold text-neon-pink">
+          <h2 className="text-3xl font-gamer font-bold text-pink-600 dark:text-neon-pink">
             {t('home.onSale')}
           </h2>
           <Link
             to="/catalog?category=ofertas"
-            className="text-neon-pink hover:text-neon-cyan transition-colors"
+            className="text-pink-600 dark:text-neon-pink hover:text-pink-700 dark:hover:text-neon-cyan transition-colors"
           >
             {t('common.viewAll')} →
           </Link>
@@ -118,12 +118,12 @@ const Home: React.FC = () => {
       {/* Featured */}
       <section className="py-12 container mx-auto px-4">
         <div className="flex items-center justify-between mb-8">
-          <h2 className="text-3xl font-gamer font-bold text-neon-cyan">
+          <h2 className="text-3xl font-gamer font-bold text-cyan-600 dark:text-neon-cyan">
             {t('home.featured')}
           </h2>
           <Link
             to="/catalog"
-            className="text-neon-cyan hover:text-neon-blue transition-colors"
+            className="text-cyan-600 dark:text-neon-cyan hover:text-cyan-700 dark:hover:text-neon-blue transition-colors"
           >
             {t('common.viewAll')} →
           </Link>

@@ -4,8 +4,9 @@
 
 @layer base {
   body {
-    @apply bg-gamer-dark text-white font-sans antialiased;
+    @apply bg-white dark:bg-gamer-dark text-gray-900 dark:text-white font-sans antialiased;
     font-family: 'Inter', 'Poppins', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
   h1, h2, h3, h4, h5, h6 {
     @apply font-gamer;

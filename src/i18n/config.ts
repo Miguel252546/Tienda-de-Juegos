@@ -7,7 +7,13 @@ import enTranslations from './locales/en.json'
 const getLanguage = (): string => {
   if (typeof window !== 'undefined') {
     try {
-      return localStorage.getItem('language') || 'es'
+      const savedLang = localStorage.getItem('language')
+      if (savedLang && (savedLang === 'es' || savedLang === 'en')) {
+        return savedLang
+      }
+      // Detect language from browser
+      const browserLang = navigator.language.split('-')[0]
+      return browserLang === 'en' ? 'en' : 'es'
     } catch (e) {
       return 'es'
     }
@@ -26,8 +32,22 @@ i18n
     fallbackLng: 'es',
     interpolation: {
       escapeValue: false
+    },
+    react: {
+      useSuspense: false
     }
   })
+
+// Save language changes to localStorage
+i18n.on('languageChanged', (lng) => {
+  if (typeof window !== 'undefined') {
+    try {
+      localStorage.setItem('language', lng)
+    } catch (e) {
+      console.error('Error saving language to localStorage:', e)
+    }
+  }
+})
 
 export default i18n
 

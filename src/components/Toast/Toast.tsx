@@ -21,13 +21,13 @@ const Toast: React.FC = () => {
   const getBgColor = (type: ToastType) => {
     switch (type) {
       case 'success':
-        return 'bg-green-900/20 border-green-500'
+        return 'bg-green-50 dark:bg-green-900/20 border-green-500'
       case 'error':
-        return 'bg-red-900/20 border-red-500'
+        return 'bg-red-50 dark:bg-red-900/20 border-red-500'
       case 'warning':
-        return 'bg-yellow-900/20 border-yellow-500'
+        return 'bg-yellow-50 dark:bg-yellow-900/20 border-yellow-500'
       default:
-        return 'bg-blue-900/20 border-blue-500'
+        return 'bg-blue-50 dark:bg-blue-900/20 border-blue-500'
     }
   }
 
@@ -39,10 +39,10 @@ const Toast: React.FC = () => {
           className={`flex items-center space-x-3 p-4 rounded-lg border ${getBgColor(toast.type)} shadow-lg min-w-[300px] animate-slide-up`}
         >
           {getIcon(toast.type)}
-          <p className="flex-1 text-white text-sm">{toast.message}</p>
+          <p className="flex-1 text-gray-900 dark:text-white text-sm">{toast.message}</p>
           <button
             onClick={() => removeToast(toast.id)}
-            className="text-gray-400 hover:text-white transition-colors"
+            className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
             aria-label="Close"
           >
             <X className="w-4 h-4" />

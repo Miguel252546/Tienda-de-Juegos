@@ -104,14 +104,14 @@ const Catalog: React.FC = () => {
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Filters Sidebar */}
           <aside className={`lg:w-64 ${showFilters ? 'block' : 'hidden'} lg:block`}>
-            <div className="bg-gamer-charcoal rounded-lg p-6 border border-gamer-gray sticky top-24">
+            <div className="bg-white dark:bg-gamer-charcoal rounded-lg p-6 border border-gray-200 dark:border-gamer-gray sticky top-24 transition-colors">
               <div className="flex items-center justify-between mb-6">
-                <h2 className="text-xl font-gamer font-bold text-neon-blue">
+                <h2 className="text-xl font-gamer font-bold text-blue-600 dark:text-neon-blue">
                   {t('common.filter')}
                 </h2>
                 <button
                   onClick={() => resetFilters()}
-                  className="text-sm text-gray-400 hover:text-neon-blue transition-colors"
+                  className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-neon-blue transition-colors"
                 >
                   {t('common.reset')}
                 </button>
@@ -120,7 +120,7 @@ const Catalog: React.FC = () => {
               <div className="space-y-6">
                 {/* Search */}
                 <div>
-                  <label className="block text-white text-sm font-semibold mb-2">
+                  <label className="block text-gray-900 dark:text-white text-sm font-semibold mb-2">
                     {t('common.search')}
                   </label>
                   <div className="relative">
@@ -129,21 +129,21 @@ const Catalog: React.FC = () => {
                       value={searchQuery}
                       onChange={(e) => setSearchQuery(e.target.value)}
                       placeholder={t('common.search')}
-                      className="w-full px-4 py-2 pl-10 bg-gamer-gray border border-gamer-gray rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-neon-blue"
+                      className="w-full px-4 py-2 pl-10 bg-gray-100 dark:bg-gamer-gray border border-gray-300 dark:border-gamer-gray rounded-lg text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:border-blue-500 dark:focus:border-neon-blue transition-colors"
                     />
-                    <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
+                    <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500 dark:text-gray-400 w-4 h-4" />
                   </div>
                 </div>
 
                 {/* Category */}
                 <div>
-                  <label className="block text-white text-sm font-semibold mb-2">
+                  <label className="block text-gray-900 dark:text-white text-sm font-semibold mb-2">
                     {t('common.categories')}
                   </label>
                   <select
                     value={category || ''}
                     onChange={(e) => setCategory(e.target.value || null)}
-                    className="w-full px-4 py-2 bg-gamer-gray border border-gamer-gray rounded-lg text-white focus:outline-none focus:border-neon-blue"
+                    className="w-full px-4 py-2 bg-gray-100 dark:bg-gamer-gray border border-gray-300 dark:border-gamer-gray rounded-lg text-gray-900 dark:text-white focus:outline-none focus:border-blue-500 dark:focus:border-neon-blue transition-colors"
                   >
                     <option value="">{t('common.all')}</option>
                     {categories.map(cat => (
@@ -154,13 +154,13 @@ const Catalog: React.FC = () => {
 
                 {/* Platform */}
                 <div>
-                  <label className="block text-white text-sm font-semibold mb-2">
+                  <label className="block text-gray-900 dark:text-white text-sm font-semibold mb-2">
                     {t('common.platforms')}
                   </label>
                   <select
                     value={platform || ''}
                     onChange={(e) => setPlatform(e.target.value || null)}
-                    className="w-full px-4 py-2 bg-gamer-gray border border-gamer-gray rounded-lg text-white focus:outline-none focus:border-neon-blue"
+                    className="w-full px-4 py-2 bg-gray-100 dark:bg-gamer-gray border border-gray-300 dark:border-gamer-gray rounded-lg text-gray-900 dark:text-white focus:outline-none focus:border-blue-500 dark:focus:border-neon-blue transition-colors"
                   >
                     <option value="">{t('common.all')}</option>
                     {platforms.map(plat => (
@@ -171,7 +171,7 @@ const Catalog: React.FC = () => {
 
                 {/* Price Range */}
                 <div>
-                  <label className="block text-white text-sm font-semibold mb-2">
+                  <label className="block text-gray-900 dark:text-white text-sm font-semibold mb-2">
                     {t('common.price')}: €{priceRange[0]} - €{priceRange[1]}
                   </label>
                   <div className="space-y-2">
@@ -181,7 +181,7 @@ const Catalog: React.FC = () => {
                       max={maxPrice}
                       value={priceRange[0]}
                       onChange={(e) => setPriceRange([Number(e.target.value), priceRange[1]])}
-                      className="w-full"
+                      className="w-full accent-blue-600 dark:accent-neon-blue"
                     />
                     <input
                       type="range"
@@ -189,20 +189,20 @@ const Catalog: React.FC = () => {
                       max={maxPrice}
                       value={priceRange[1]}
                       onChange={(e) => setPriceRange([priceRange[0], Number(e.target.value)])}
-                      className="w-full"
+                      className="w-full accent-blue-600 dark:accent-neon-blue"
                     />
                   </div>
                 </div>
 
                 {/* Rating */}
                 <div>
-                  <label className="block text-white text-sm font-semibold mb-2">
+                  <label className="block text-gray-900 dark:text-white text-sm font-semibold mb-2">
                     {t('common.rating')}: {rating ? `${rating}+` : t('common.all')}
                   </label>
                   <select
                     value={rating || ''}
                     onChange={(e) => setRating(e.target.value ? Number(e.target.value) : null)}
-                    className="w-full px-4 py-2 bg-gamer-gray border border-gamer-gray rounded-lg text-white focus:outline-none focus:border-neon-blue"
+                    className="w-full px-4 py-2 bg-gray-100 dark:bg-gamer-gray border border-gray-300 dark:border-gamer-gray rounded-lg text-gray-900 dark:text-white focus:outline-none focus:border-blue-500 dark:focus:border-neon-blue transition-colors"
                   >
                     <option value="">{t('common.all')}</option>
                     <option value="4">4+</option>
@@ -213,13 +213,13 @@ const Catalog: React.FC = () => {
 
                 {/* Tags */}
                 <div>
-                  <label className="block text-white text-sm font-semibold mb-2">
+                  <label className="block text-gray-900 dark:text-white text-sm font-semibold mb-2">
                     {t('common.tags')}
                   </label>
                   <select
                     value={tag || ''}
                     onChange={(e) => setTag(e.target.value || null)}
-                    className="w-full px-4 py-2 bg-gamer-gray border border-gamer-gray rounded-lg text-white focus:outline-none focus:border-neon-blue"
+                    className="w-full px-4 py-2 bg-gray-100 dark:bg-gamer-gray border border-gray-300 dark:border-gamer-gray rounded-lg text-gray-900 dark:text-white focus:outline-none focus:border-blue-500 dark:focus:border-neon-blue transition-colors"
                   >
                     <option value="">{t('common.all')}</option>
                     {tags.map(t => (
@@ -235,16 +235,16 @@ const Catalog: React.FC = () => {
           <div className="flex-1">
             <div className="flex items-center justify-between mb-6">
               <div>
-                <h1 className="text-3xl font-gamer font-bold text-neon-blue mb-2">
+                <h1 className="text-3xl font-gamer font-bold text-blue-600 dark:text-neon-blue mb-2">
                   {t('common.catalog')}
                 </h1>
-                <p className="text-gray-400">
+                <p className="text-gray-600 dark:text-gray-400">
                   {filteredProducts.length} {t('common.products')}
                 </p>
               </div>
               <button
                 onClick={() => setShowFilters(!showFilters)}
-                className="lg:hidden p-2 bg-gamer-charcoal rounded-lg border border-gamer-gray text-white hover:text-neon-blue transition-colors"
+                className="lg:hidden p-2 bg-white dark:bg-gamer-charcoal rounded-lg border border-gray-200 dark:border-gamer-gray text-gray-700 dark:text-white hover:text-blue-600 dark:hover:text-neon-blue transition-colors"
                 aria-label={t('common.filter')}
               >
                 {showFilters ? <X className="w-5 h-5" /> : <Filter className="w-5 h-5" />}
@@ -253,7 +253,7 @@ const Catalog: React.FC = () => {
 
             {filteredProducts.length === 0 ? (
               <div className="text-center py-12">
-                <p className="text-gray-400 text-lg">{t('common.noResults')}</p>
+                <p className="text-gray-600 dark:text-gray-400 text-lg">{t('common.noResults')}</p>
               </div>
             ) : (
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">

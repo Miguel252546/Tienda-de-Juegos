@@ -12,8 +12,7 @@
     "ratingAvg": 4.5,
     "ratingCount": 3240,
     "images": [
-      "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800",
-      "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800"
+      "/img/CyberPunk.jpeg"
     ],
     "shortDesc": "Un RPG de acción futurista en un mundo abierto cyberpunk",
     "longDesc": "Sumérgete en Night City, una metrópolis obsesiva obsesionada con el poder, el glamour y la modificación corporal. Juega como V, un mercenario en busca de un implante único que permite la inmortalidad. Personaliza tu personaje y tu estilo de juego mientras exploras una vasta ciudad abierta.",
@@ -41,8 +40,7 @@
     "ratingAvg": 4.8,
     "ratingCount": 8920,
     "images": [
-      "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800",
-      "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800"
+      "/img/EldenRingShadows.jpeg"
     ],
     "shortDesc": "Expansión épica del aclamado RPG de acción",
     "longDesc": "Explora nuevas tierras, enfrenta nuevos enemigos y descubre secretos ocultos en esta expansión masiva. Con nuevas armas, hechizos y jefes desafiantes, esta es la experiencia definitiva de Elden Ring.",
@@ -69,7 +67,7 @@
     "ratingAvg": 4.7,
     "ratingCount": 5670,
     "images": [
-      "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=800"
+      "/img/HorizonForbiddenWest.jpeg"
     ],
     "shortDesc": "Aventura épica en un mundo post-apocalíptico",
     "longDesc": "Únete a Aloy mientras explora el Oeste Prohibido, una frontera majestuosa pero peligrosa que oculta nuevas amenazas misteriosas. Explora tierras distantes, lucha contra máquinas más grandes e imponentes, y encuentra tribus extrañas en nuevas tierras.",
@@ -96,7 +94,7 @@
     "ratingAvg": 4.6,
     "ratingCount": 4320,
     "images": [
-      "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800"
+      "/img/ResidentEvil4Remake.jpeg"
     ],
     "shortDesc": "Remake del clásico de terror y supervivencia",
     "longDesc": "Revive la experiencia clásica con gráficos de nueva generación, controles modernizados y contenido adicional. Leon S. Kennedy debe rescatar a la hija del presidente de un culto siniestro en un pueblo rural europeo.",
@@ -123,7 +121,7 @@
     "ratingAvg": 4.2,
     "ratingCount": 12340,
     "images": [
-      "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800"
+      "/img/FIFA24.jpeg"
     ],
     "shortDesc": "El simulador de fútbol más realista",
     "longDesc": "Experimenta la autenticidad del fútbol con HyperMotionV, tecnología de captura de movimiento avanzada, y más de 19,000 jugadores en más de 700 equipos. Modo Carrera, Ultimate Team y Volta Football.",
@@ -151,7 +149,7 @@
     "ratingAvg": 4.3,
     "ratingCount": 7890,
     "images": [
-      "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800"
+      "/img/TheSims5.jpeg"
     ],
     "shortDesc": "Crea y controla la vida de tus Sims",
     "longDesc": "Construye hogares únicos, diseña Sims con personalidades distintas y vive sus vidas. Con nuevas características de construcción, más opciones de personalización y un mundo abierto más grande.",
@@ -179,7 +177,7 @@
     "ratingAvg": 4.9,
     "ratingCount": 45670,
     "images": [
-      "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=800"
+      "/img/StardewValleyExpanded.jpeg"
     ],
     "shortDesc": "Granja, construye y explora en este RPG indie",
     "longDesc": "Hereda la vieja granja de tu abuelo en Stardew Valley. Con herramientas heredadas y algunas monedas, comienzas tu nueva vida. ¿Puedes aprender a vivir de la tierra y convertir estos campos cubiertos de maleza en un hogar próspero?",
@@ -206,7 +204,7 @@
     "ratingAvg": 4.7,
     "ratingCount": 234560,
     "images": [
-      "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800"
+      "/img/Counter-Strike2.jpeg"
     ],
     "shortDesc": "Shooter táctico competitivo gratuito",
     "longDesc": "El shooter táctico competitivo definitivo. Juega el juego de acción multijugador más popular del mundo. CS2 es la evolución más grande en la historia de Counter-Strike, con el motor Source 2.",
@@ -233,7 +231,7 @@
     "ratingAvg": 4.9,
     "ratingCount": 67890,
     "images": [
-      "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800"
+      "/img/BaldursGate3.jpeg"
     ],
     "shortDesc": "RPG épico basado en D&D",
     "longDesc": "Reúne tu grupo y regresa a los Reinos Olvidados en una historia de compañerismo y traición, sacrificio y supervivencia, y la atracción del poder absoluto. Tu historia se desarrolla en un mundo de fantasía rico en historias donde cada decisión importa.",
@@ -259,7 +257,7 @@
     "ratingAvg": 4.4,
     "ratingCount": 34560,
     "images": [
-      "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=800"
+      "/img/CallofDutyModernWarfareIII.jpeg"
     ],
     "shortDesc": "Shooter de acción militar",
     "longDesc": "El regreso del icónico Capitán Price y Task Force 141 en una campaña épica. Multijugador con 16 mapas clásicos remasterizados y el nuevo modo Zombies.",
@@ -286,7 +284,7 @@
     "ratingAvg": 4.8,
     "ratingCount": 123456,
     "images": [
-      "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800"
+      "/img/Minecraft.jpeg"
     ],
     "shortDesc": "Construye, explora y sobrevive",
     "longDesc": "Minecraft es un juego de construcción de bloques donde puedes explorar mundos infinitos y construir desde casas simples hasta castillos grandiosos. Juega en modo creativo con recursos ilimitados o mina en modo supervivencia.",
@@ -313,7 +311,7 @@
     "ratingAvg": 4.6,
     "ratingCount": 234567,
     "images": [
-      "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800"
+      "/img/GrandTheftAutoV.jpeg"
     ],
     "shortDesc": "Crimen y acción en Los Santos",
     "longDesc": "Grand Theft Auto V ofrece a los jugadores la libertad de explorar el mundo abierto de San Andreas y Los Santos con la mejor definición y resolución hasta la fecha. Incluye GTA Online.",
@@ -340,7 +338,7 @@
     "ratingAvg": 4.9,
     "ratingCount": 345678,
     "images": [
-      "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800"
+      "/img/TheWitcher3WildHunt.jpeg"
     ],
     "shortDesc": "RPG épico de fantasía oscura",
     "longDesc": "Juega como Geralt de Rivia, un cazador de monstruos en un mundo de fantasía oscura. Explora un vasto mundo abierto, completa misiones épicas y toma decisiones que afectan el destino de reinos enteros.",
@@ -367,7 +365,7 @@
     "ratingAvg": 4.8,
     "ratingCount": 234567,
     "images": [
-      "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=800"
+      "/img/RedDeadRedemption2.jpeg"
     ],
     "shortDesc": "Aventura del salvaje oeste",
     "longDesc": "América, 1899. El fin de la era de los forajidos ha comenzado. Después de un robo fallido en el pueblo de Blackwater, Arthur Morgan y la banda de Van der Linde se ven obligados a huir.",
@@ -393,7 +391,7 @@
     "ratingAvg": 4.9,
     "ratingCount": 123456,
     "images": [
-      "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800"
+      "/img/GodofWarRagnarök.jpeg"
     ],
     "shortDesc": "Epic Norse mythology adventure",
     "longDesc": "Kratos y Atreus deben viajar a cada uno de los Nueve Reinos en busca de respuestas mientras las fuerzas asgardianas se preparan para una guerra profetizada que acabará con el mundo.",
@@ -420,7 +418,7 @@
     "ratingAvg": 4.5,
     "ratingCount": 98765,
     "images": [
-      "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800"
+      "/img/AssassinsCreedValhalla.jpeg"
     ],
     "shortDesc": "Vikingos y asesinos en la Inglaterra medieval",
     "longDesc": "Conviértete en Eivor, un guerrero vikingo legendario en busca de gloria. Explora un mundo abierto dinámico y hermoso que se extiende desde las costas de Noruega hasta los reinos de Inglaterra.",
@@ -447,7 +445,7 @@
     "ratingAvg": 4.6,
     "ratingCount": 456789,
     "images": [
-      "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800"
+      "/img/RocketLeague.jpeg"
     ],
     "shortDesc": "Fútbol con coches",
     "longDesc": "Rocket League es un juego de deportes de acción híbrido que combina fútbol con carreras, equipado con controles fáciles de aprender y física fluida y satisfactoria.",
@@ -473,7 +471,7 @@
     "ratingAvg": 4.3,
     "ratingCount": 234567,
     "images": [
-      "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=800"
+      "/img/AmongUs.jpeg"
     ],
     "shortDesc": "Multijugador de deducción social",
     "longDesc": "Juega con 4-15 jugadores online o local. Prepárate para el despegue, pero ten cuidado: uno o más jugadores aleatorios entre la tripulación son impostores listos para matar.",
@@ -499,7 +497,7 @@
     "ratingAvg": 4.7,
     "ratingCount": 345678,
     "images": [
-      "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800"
+      "/img/Valorant.jpeg"
     ],
     "shortDesc": "Shooter táctico 5v5",
     "longDesc": "Valorant es un shooter táctico 5v5 basado en personajes donde los jugadores compiten como atacantes o defensores en rondas de objetivos.",
@@ -525,7 +523,7 @@
     "ratingAvg": 4.9,
     "ratingCount": 123456,
     "images": [
-      "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800"
+      "/img/HollowKnight.jpeg"
     ],
     "shortDesc": "Metroidvania indie con arte hermoso",
     "longDesc": "Forja tu propio camino en Hollow Knight! Una aventura épica a través de un vasto reino de insectos y héroes que se encuentra en ruinas. Explora cavernas retorcidas, lucha contra criaturas contaminadas y entabla amistad con extraños insectos.",
@@ -551,7 +549,7 @@
     "ratingAvg": 4.7,
     "ratingCount": 45678,
     "images": [
-      "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800"
+      "/img/DeadSpaceRemake.jpeg"
     ],
     "shortDesc": "Terror espacial remasterizado",
     "longDesc": "Isaac Clarke es un ingeniero común con una misión. Reparar la USG Ishimura, una nave minera gigante, y rescatar a su tripulación. Pero todo sale mal.",
@@ -578,7 +576,7 @@
     "ratingAvg": 4.4,
     "ratingCount": 34567,
     "images": [
-      "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=800"
+      "/img/CitiesSkylinesII.jpeg"
     ],
     "shortDesc": "Constructor de ciudades moderno",
     "longDesc": "Construye la ciudad de tus sueños sin restricciones. Con herramientas de construcción mejoradas y un motor de simulación más profundo, crea ciudades más grandes y detalladas que nunca.",
@@ -605,7 +603,7 @@
     "ratingAvg": 4.5,
     "ratingCount": 234567,
     "images": [
-      "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800"
+      "/img/DiabloIV.jpeg"
     ],
     "shortDesc": "RPG de acción oscuro",
     "longDesc": "Regresa a Santuario en Diablo IV. El mundo está siendo corrompido por demonios y solo tú puedes detenerlos. Elige entre cinco clases y explora un mundo abierto oscuro y gótico.",
@@ -632,7 +630,7 @@
     "ratingAvg": 4.3,
     "ratingCount": 98765,
     "images": [
-      "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800"
+      "/img/header.jpeg"
     ],
     "shortDesc": "RPG espacial de Bethesda",
     "longDesc": "Starfield es el primer universo nuevo en 25 años de Bethesda Game Studios. Explora las estrellas y descubre la última gran frontera de la humanidad.",
@@ -659,7 +657,7 @@
     "ratingAvg": 4.8,
     "ratingCount": 123456,
     "images": [
-      "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800"
+      "/img/Spider-Man2.jpeg"
     ],
     "shortDesc": "Aventura de superhéroes épica",
     "longDesc": "Juega como Peter Parker y Miles Morales mientras protegen la ciudad de Nueva York de nuevos villanos. Con nuevas habilidades, trajes y una historia emocionante.",
@@ -686,7 +684,7 @@
     "ratingAvg": 4.7,
     "ratingCount": 67890,
     "images": [
-      "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800"
+      "/img/AlanWake2.jpeg"
     ],
     "shortDesc": "Terror psicológico de Remedy",
     "longDesc": "Alan Wake, un escritor atrapado en una pesadilla más allá de nuestra realidad, escribe una historia para escapar. Pero sus palabras se convierten en oscuridad alrededor de él.",
@@ -713,7 +711,7 @@
     "ratingAvg": 4.4,
     "ratingCount": 234567,
     "images": [
-      "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=800"
+      "/img/SeaOfThieves.jpeg"
     ],
     "shortDesc": "Aventura pirata multijugador",
     "longDesc": "Sea of Thieves ofrece la experiencia pirata esencial, desde navegar y luchar hasta explorar y saquear: todo lo que necesitas para vivir la vida pirata y convertirte en una leyenda.",
@@ -739,7 +737,7 @@
     "ratingAvg": 4.9,
     "ratingCount": 234567,
     "images": [
-      "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800"
+      "/img/Starfield.jpeg"
     ],
     "shortDesc": "Roguelike de acción con mitología griega",
     "longDesc": "Desafía al dios de los muertos mientras luchas para escapar del Inframundo en este roguelike de acción de Supergiant Games.",
@@ -765,7 +763,7 @@
     "ratingAvg": 4.2,
     "ratingCount": 345678,
     "images": [
-      "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800"
+      "/img/FallGuys.jpeg"
     ],
     "shortDesc": "Battle royale de plataformas",
     "longDesc": "Fall Guys es un battle royale multijugador masivo donde compites en rondas caóticas hasta que un solo vencedor permanece.",
@@ -791,7 +789,7 @@
     "ratingAvg": 4.8,
     "ratingCount": 123456,
     "images": [
-      "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=800"
+      "/img/Celeste.jpeg"
     ],
     "shortDesc": "Plataformas indie con historia profunda",
     "longDesc": "Ayuda a Madeline a sobrevivir a sus demonios internos en su viaje a la cima de la Montaña Celeste, en este superpulido plataformero de acción de los creadores de TowerFall.",

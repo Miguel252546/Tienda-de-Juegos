@@ -168,7 +168,7 @@ const ProductDetail: React.FC = () => {
       <div className="container mx-auto px-4 py-8">
         <button
           onClick={() => navigate(-1)}
-          className="flex items-center text-gray-400 hover:text-neon-blue transition-colors mb-6"
+          className="flex items-center text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-neon-blue transition-colors mb-6"
         >
           <ChevronLeft className="w-5 h-5 mr-2" />
           {t('common.back')}
@@ -177,7 +177,7 @@ const ProductDetail: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
           {/* Images */}
           <div className="space-y-4">
-            <div className="relative aspect-square bg-gamer-gray rounded-lg overflow-hidden">
+            <div className="relative aspect-square bg-gray-100 dark:bg-gamer-gray rounded-lg overflow-hidden transition-colors">
               <Swiper
                 modules={[Navigation, Thumbs]}
                 navigation
@@ -187,11 +187,15 @@ const ProductDetail: React.FC = () => {
                 {product.images.map((image, index) => (
                   <SwiperSlide key={index}>
                     <img
-                      src={image}
+                      src={image || 'https://via.placeholder.com/800x600?text=No+Image'}
                       alt={`${product.title} ${index + 1}`}
                       className="w-full h-full object-cover cursor-zoom-in"
                       onClick={() => setShowZoom(true)}
                       loading="lazy"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement
+                        target.src = 'https://via.placeholder.com/800x600?text=Image+Not+Found'
+                      }}
                     />
                   </SwiperSlide>
                 ))}
@@ -208,11 +212,15 @@ const ProductDetail: React.FC = () => {
               {product.images.map((image, index) => (
                 <SwiperSlide key={index}>
                   <img
-                    src={image}
+                    src={image || 'https://via.placeholder.com/200x150?text=No+Image'}
                     alt={`${product.title} thumb ${index + 1}`}
-                    className="w-full h-20 object-cover rounded cursor-pointer border-2 border-transparent hover:border-neon-blue"
+                    className="w-full h-20 object-cover rounded cursor-pointer border-2 border-transparent hover:border-blue-500 dark:hover:border-neon-blue transition-colors"
                     onClick={() => setSelectedImage(index)}
                     loading="lazy"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement
+                      target.src = 'https://via.placeholder.com/200x150?text=Image+Not+Found'
+                    }}
                   />
                 </SwiperSlide>
               ))}
@@ -223,28 +231,28 @@ const ProductDetail: React.FC = () => {
           <div>
             <div className="flex items-start justify-between mb-4">
               <div>
-                <h1 className="text-4xl font-gamer font-bold text-white mb-2">
+                <h1 className="text-4xl font-gamer font-bold text-gray-900 dark:text-white mb-2">
                   {product.title}
                 </h1>
                 <div className="flex items-center space-x-4 mb-4">
                   <div className="flex items-center">
                     <Star className="w-5 h-5 fill-yellow-400 text-yellow-400 mr-1" />
-                    <span className="text-white font-semibold">{product.ratingAvg.toFixed(1)}</span>
-                    <span className="text-gray-400 ml-1">({product.ratingCount})</span>
+                    <span className="text-gray-900 dark:text-white font-semibold">{product.ratingAvg.toFixed(1)}</span>
+                    <span className="text-gray-600 dark:text-gray-400 ml-1">({product.ratingCount})</span>
                   </div>
                   <span className="text-gray-400">|</span>
-                  <span className="text-gray-400">{t('common.ageRating')}: {product.ageRating}</span>
+                  <span className="text-gray-600 dark:text-gray-400">{t('common.ageRating')}: {product.ageRating}</span>
                 </div>
               </div>
               <button
                 onClick={handleWishlistToggle}
-                className="p-2 bg-gamer-charcoal rounded-lg border border-gamer-gray hover:border-neon-pink transition-colors"
+                className="p-2 bg-white dark:bg-gamer-charcoal rounded-lg border border-gray-200 dark:border-gamer-gray hover:border-pink-500 dark:hover:border-neon-pink transition-colors"
                 aria-label={t('common.wishlist')}
               >
                 <Heart
                   className={`w-6 h-6 ${
                     isInWishlist(product.id)
-                      ? 'fill-neon-pink text-neon-pink'
+                      ? 'fill-pink-500 text-pink-500 dark:fill-neon-pink dark:text-neon-pink'
                       : 'text-gray-400'
                   }`}
                 />
@@ -255,18 +263,18 @@ const ProductDetail: React.FC = () => {
             <div className="mb-6">
               {isOnSale ? (
                 <div>
-                  <span className="text-4xl font-bold text-neon-pink">
+                  <span className="text-4xl font-bold text-pink-600 dark:text-neon-pink">
                     €{product.price.toFixed(2)}
                   </span>
                   <span className="text-2xl text-gray-500 line-through ml-4">
                     €{product.originalPrice!.toFixed(2)}
                   </span>
-                  <span className="ml-4 bg-neon-pink text-white px-3 py-1 rounded text-sm font-semibold">
+                  <span className="ml-4 bg-pink-500 dark:bg-neon-pink text-white px-3 py-1 rounded text-sm font-semibold">
                     -{discount}%
                   </span>
                 </div>
               ) : (
-                <span className="text-4xl font-bold text-neon-blue">
+                <span className="text-4xl font-bold text-blue-600 dark:text-neon-blue">
                   €{product.price.toFixed(2)}
                 </span>
               )}
@@ -275,11 +283,11 @@ const ProductDetail: React.FC = () => {
             {/* Stock */}
             <div className="mb-6">
               {product.stock > 0 ? (
-                <span className="text-green-400 font-semibold">
+                <span className="text-green-600 dark:text-green-400 font-semibold">
                   {t('common.inStock')} ({product.stock} {t('common.available')})
                 </span>
               ) : (
-                <span className="text-red-400 font-semibold">
+                <span className="text-red-600 dark:text-red-400 font-semibold">
                   {t('common.outOfStock')}
                 </span>
               )}
@@ -287,12 +295,12 @@ const ProductDetail: React.FC = () => {
 
             {/* Platforms */}
             <div className="mb-6">
-              <h3 className="text-white font-semibold mb-2">{t('common.platforms')}</h3>
+              <h3 className="text-gray-900 dark:text-white font-semibold mb-2">{t('common.platforms')}</h3>
               <div className="flex flex-wrap gap-2">
                 {product.platforms.map((platform) => (
                   <span
                     key={platform}
-                    className="bg-gamer-gray text-white px-4 py-2 rounded-lg"
+                    className="bg-gray-100 dark:bg-gamer-gray text-gray-900 dark:text-white px-4 py-2 rounded-lg"
                   >
                     {platform}
                   </span>
@@ -303,18 +311,18 @@ const ProductDetail: React.FC = () => {
             {/* Quantity and Add to Cart */}
             <div className="mb-6">
               <div className="flex items-center space-x-4">
-                <label className="text-white font-semibold">{t('common.quantity')}:</label>
+                <label className="text-gray-900 dark:text-white font-semibold">{t('common.quantity')}:</label>
                 <div className="flex items-center space-x-2">
                   <button
                     onClick={() => setQuantity(Math.max(1, quantity - 1))}
-                    className="w-10 h-10 bg-gamer-gray text-white rounded-lg hover:bg-gamer-charcoal transition-colors"
+                    className="w-10 h-10 bg-gray-100 dark:bg-gamer-gray text-gray-900 dark:text-white rounded-lg hover:bg-gray-200 dark:hover:bg-gamer-charcoal transition-colors"
                   >
                     -
                   </button>
-                  <span className="text-white font-semibold w-12 text-center">{quantity}</span>
+                  <span className="text-gray-900 dark:text-white font-semibold w-12 text-center">{quantity}</span>
                   <button
                     onClick={() => setQuantity(Math.min(product.stock, quantity + 1))}
-                    className="w-10 h-10 bg-gamer-gray text-white rounded-lg hover:bg-gamer-charcoal transition-colors"
+                    className="w-10 h-10 bg-gray-100 dark:bg-gamer-gray text-gray-900 dark:text-white rounded-lg hover:bg-gray-200 dark:hover:bg-gamer-charcoal transition-colors"
                   >
                     +
                   </button>
@@ -325,7 +333,7 @@ const ProductDetail: React.FC = () => {
             <button
               onClick={handleAddToCart}
               disabled={product.stock === 0}
-              className="w-full bg-neon-blue text-white py-4 rounded-lg font-semibold text-lg hover:bg-opacity-80 disabled:opacity-50 disabled:cursor-not-allowed transition-colors flex items-center justify-center space-x-2"
+              className="w-full bg-blue-600 dark:bg-neon-blue text-white py-4 rounded-lg font-semibold text-lg hover:bg-blue-700 dark:hover:bg-opacity-80 disabled:opacity-50 disabled:cursor-not-allowed transition-colors flex items-center justify-center space-x-2"
             >
               <ShoppingCart className="w-5 h-5" />
               <span>{t('common.addToCart')}</span>
@@ -333,25 +341,25 @@ const ProductDetail: React.FC = () => {
 
             {/* Description */}
             <div className="mt-8">
-              <h2 className="text-2xl font-gamer font-bold text-neon-blue mb-4">
+              <h2 className="text-2xl font-gamer font-bold text-blue-600 dark:text-neon-blue mb-4">
                 {t('common.description')}
               </h2>
-              <p className="text-gray-300 leading-relaxed">{product.longDesc}</p>
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">{product.longDesc}</p>
             </div>
           </div>
         </div>
 
         {/* Specifications */}
         <div className="mb-12">
-          <h2 className="text-2xl font-gamer font-bold text-neon-blue mb-6">
+          <h2 className="text-2xl font-gamer font-bold text-blue-600 dark:text-neon-blue mb-6">
             {t('common.specifications')}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-xl font-semibold text-white mb-4">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
                 {t('common.minRequirements')}
               </h3>
-              <ul className="space-y-2 text-gray-300">
+              <ul className="space-y-2 text-gray-700 dark:text-gray-300">
                 {product.specs.minRequirements.map((req, index) => (
                   <li key={index} className="flex items-start">
                     <span className="mr-2">•</span>
@@ -361,10 +369,10 @@ const ProductDetail: React.FC = () => {
               </ul>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-white mb-4">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
                 {t('common.recommendedRequirements')}
               </h3>
-              <ul className="space-y-2 text-gray-300">
+              <ul className="space-y-2 text-gray-700 dark:text-gray-300">
                 {product.specs.recommendedRequirements.map((req, index) => (
                   <li key={index} className="flex items-start">
                     <span className="mr-2">•</span>
@@ -378,16 +386,16 @@ const ProductDetail: React.FC = () => {
 
         {/* Reviews */}
         <div className="mb-12">
-          <h2 className="text-2xl font-gamer font-bold text-neon-blue mb-6">
+          <h2 className="text-2xl font-gamer font-bold text-blue-600 dark:text-neon-blue mb-6">
             {t('common.reviews')} ({reviews.length})
           </h2>
           
           {/* Write Review */}
-          <div className="bg-gamer-charcoal rounded-lg p-6 mb-6 border border-gamer-gray">
-            <h3 className="text-xl font-semibold text-white mb-4">{t('common.writeReview')}</h3>
+          <div className="bg-white dark:bg-gamer-charcoal rounded-lg p-6 mb-6 border border-gray-200 dark:border-gamer-gray transition-colors">
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">{t('common.writeReview')}</h3>
             <div className="space-y-4">
               <div>
-                <label className="block text-white font-semibold mb-2">{t('common.yourRating')}</label>
+                <label className="block text-gray-900 dark:text-white font-semibold mb-2">{t('common.yourRating')}</label>
                 <div className="flex space-x-1">
                   {[1, 2, 3, 4, 5].map((rating) => (
                     <button
@@ -407,18 +415,18 @@ const ProductDetail: React.FC = () => {
                 </div>
               </div>
               <div>
-                <label className="block text-white font-semibold mb-2">{t('common.yourComment')}</label>
+                <label className="block text-gray-900 dark:text-white font-semibold mb-2">{t('common.yourComment')}</label>
                 <textarea
                   value={newReview.comment}
                   onChange={(e) => setNewReview({ ...newReview, comment: e.target.value })}
-                  className="w-full px-4 py-2 bg-gamer-gray border border-gamer-gray rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-neon-blue"
+                  className="w-full px-4 py-2 bg-gray-100 dark:bg-gamer-gray border border-gray-300 dark:border-gamer-gray rounded-lg text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:border-blue-500 dark:focus:border-neon-blue transition-colors"
                   rows={4}
                   placeholder={t('common.yourComment')}
                 />
               </div>
               <button
                 onClick={handleSubmitReview}
-                className="bg-neon-blue text-white px-6 py-2 rounded-lg font-semibold hover:bg-opacity-80 transition-colors"
+                className="bg-blue-600 dark:bg-neon-blue text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 dark:hover:bg-opacity-80 transition-colors"
               >
                 {t('common.submit')}
               </button>
@@ -430,11 +438,11 @@ const ProductDetail: React.FC = () => {
             {reviews.map((review) => (
               <div
                 key={review.id}
-                className="bg-gamer-charcoal rounded-lg p-6 border border-gamer-gray"
+                className="bg-white dark:bg-gamer-charcoal rounded-lg p-6 border border-gray-200 dark:border-gamer-gray transition-colors"
               >
                 <div className="flex items-start justify-between mb-2">
                   <div>
-                    <h4 className="text-white font-semibold">{review.userName}</h4>
+                    <h4 className="text-gray-900 dark:text-white font-semibold">{review.userName}</h4>
                     <div className="flex items-center space-x-2">
                       <div className="flex">
                         {[1, 2, 3, 4, 5].map((rating) => (
@@ -448,11 +456,11 @@ const ProductDetail: React.FC = () => {
                           />
                         ))}
                       </div>
-                      <span className="text-gray-400 text-sm">{review.date}</span>
+                      <span className="text-gray-600 dark:text-gray-400 text-sm">{review.date}</span>
                     </div>
                   </div>
                 </div>
-                <p className="text-gray-300 mt-2">{review.comment}</p>
+                <p className="text-gray-700 dark:text-gray-300 mt-2">{review.comment}</p>
               </div>
             ))}
           </div>
@@ -461,7 +469,7 @@ const ProductDetail: React.FC = () => {
         {/* Similar Products */}
         {similarProducts.length > 0 && (
           <div>
-            <h2 className="text-2xl font-gamer font-bold text-neon-blue mb-6">
+            <h2 className="text-2xl font-gamer font-bold text-blue-600 dark:text-neon-blue mb-6">
               {t('common.similarProducts')}
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

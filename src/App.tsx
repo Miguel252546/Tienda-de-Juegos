@@ -17,9 +17,38 @@ function App() {
   const { theme } = useThemeStore()
   const { isVerified, showModal } = useAgeVerificationStore()
 
+  // Apply theme when it changes
   React.useEffect(() => {
-    document.documentElement.classList.toggle('dark', theme === 'dark')
+    const root = document.documentElement
+    if (theme === 'dark') {
+      root.classList.add('dark')
+    } else {
+      root.classList.remove('dark')
+    }
   }, [theme])
+
+  // Initialize theme on mount (before Zustand loads from localStorage)
+  React.useEffect(() => {
+    // Check if theme is already set in localStorage
+    const savedTheme = localStorage.getItem('theme-storage')
+    if (savedTheme) {
+      try {
+        const parsed = JSON.parse(savedTheme)
+        const savedThemeValue = parsed.state?.theme
+        if (savedThemeValue === 'light') {
+          document.documentElement.classList.remove('dark')
+        } else {
+          document.documentElement.classList.add('dark')
+        }
+      } catch (e) {
+        // Default to dark if parsing fails
+        document.documentElement.classList.add('dark')
+      }
+    } else {
+      // Default to dark theme
+      document.documentElement.classList.add('dark')
+    }
+  }, [])
 
   return (
     <>
