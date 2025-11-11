@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { ShoppingCart, Heart, User, Menu, X, Search, Moon, Sun, Globe } from 'lucide-react'
+import { ShoppingCart, Heart, User, Menu, X, Search, Moon, Sun } from 'lucide-react'
 import { useCartStore } from '../../store/cartStore'
 import { useWishlistStore } from '../../store/wishlistStore'
 import { useAuthStore } from '../../store/authStore'

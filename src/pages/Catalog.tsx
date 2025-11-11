@@ -34,7 +34,7 @@ const Catalog: React.FC = () => {
   useEffect(() => {
     const categoryParam = searchParams.get('category')
     const searchParam = searchParams.get('search')
-    const wishlistParam = searchParams.get('wishlist')
+    //const wishlistParam = searchParams.get('wishlist')
     
     if (categoryParam) setCategory(categoryParam)
     if (searchParam) setSearchQuery(searchParam)

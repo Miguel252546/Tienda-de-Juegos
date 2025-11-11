@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import { useTranslation } from 'react-i18next'
-import { ShoppingCart, Heart, Star, ChevronLeft, ZoomIn } from 'lucide-react'
+import { ShoppingCart, Heart, Star, ChevronLeft } from 'lucide-react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Thumbs } from 'swiper/modules'
 import 'swiper/css'
@@ -23,9 +23,9 @@ const ProductDetail: React.FC = () => {
   const [product, setProduct] = useState<Product | null>(null)
   const [similarProducts, setSimilarProducts] = useState<Product[]>([])
   const [reviews, setReviews] = useState<Review[]>([])
-  const [selectedImage, setSelectedImage] = useState(0)
+  //const [selectedImage, setSelectedImage] = useState(0)
   const [thumbsSwiper, setThumbsSwiper] = useState<any>(null)
-  const [showZoom, setShowZoom] = useState(false)
+  //const [showZoom, setShowZoom] = useState(false)
   const [quantity, setQuantity] = useState(1)
   const [newReview, setNewReview] = useState({ rating: 5, comment: '' })
 
@@ -190,7 +190,7 @@ const ProductDetail: React.FC = () => {
                       src={image || 'https://via.placeholder.com/800x600?text=No+Image'}
                       alt={`${product.title} ${index + 1}`}
                       className="w-full h-full object-cover cursor-zoom-in"
-                      onClick={() => setShowZoom(true)}
+                      //onClick={() => setShowZoom(true)}
                       loading="lazy"
                       onError={(e) => {
                         const target = e.target as HTMLImageElement
@@ -215,7 +215,7 @@ const ProductDetail: React.FC = () => {
                     src={image || 'https://via.placeholder.com/200x150?text=No+Image'}
                     alt={`${product.title} thumb ${index + 1}`}
                     className="w-full h-20 object-cover rounded cursor-pointer border-2 border-transparent hover:border-blue-500 dark:hover:border-neon-blue transition-colors"
-                    onClick={() => setSelectedImage(index)}
+                    //onClick={() => setSelectedImage(index)}
                     loading="lazy"
                     onError={(e) => {
                       const target = e.target as HTMLImageElement
