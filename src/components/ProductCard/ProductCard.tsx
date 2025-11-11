@@ -56,6 +56,10 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
     ? Math.round(((product.originalPrice! - product.price) / product.originalPrice!) * 100)
     : 0
 
+  const imgSrc = product.images && product.images.length
+    ? `${import.meta.env.BASE_URL}${product.images[0].replace(/^\.\/?/, '')}`
+    : 'https://via.placeholder.com/400x300?text=No+Image'
+
   return (
     <Link
       to={`/product/${product.slug}`}
@@ -99,7 +103,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       {/* Image */}
       <div className="relative h-48 bg-gray-100 dark:bg-gamer-gray overflow-hidden">
         <img
-          src={product.images[0] || 'https://via.placeholder.com/400x300?text=No+Image'}
+          src={imgSrc}
           alt={product.title}
           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
           loading="lazy"
