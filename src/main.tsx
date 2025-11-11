@@ -9,7 +9,7 @@ import './i18n/config'
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <HelmetProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/Tienda-de-Juegos/">
         <App />
       </BrowserRouter>
     </HelmetProvider>
